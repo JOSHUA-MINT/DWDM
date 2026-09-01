@@ -1,0 +1,104 @@
+{
+ "nodes": [
+ {
+ "id": "output_figures_05_weekday_hour_heatmap",
+ "label": "Weekday-Hour Transaction Heatmap",
+ "file_type": "image",
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/05_weekday_hour_heatmap.png",
+ "source_location": null,
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "transaction_counts",
+ "label": "Transaction Counts",
+ "file_type": "image",
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/05_weekday_hour_heatmap.png",
+ "source_location": null,
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "weekday_pattern",
+ "label": "Weekday Pattern",
+ "file_type": "image",
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/05_weekday_hour_heatmap.png",
+ "source_location": null,
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "hourly_pattern",
+ "label": "Hourly Pattern",
+ "file_type": "image",
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/05_weekday_hour_heatmap.png",
+ "source_location": null,
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "order_timing",
+ "label": "Order Timing",
+ "file_type": "image",
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/05_weekday_hour_heatmap.png",
+ "source_location": null,
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ }
+ ],
+ "edges": [
+ {
+ "source": "output_figures_05_weekday_hour_heatmap",
+ "target": "transaction_counts",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/05_weekday_hour_heatmap.png",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "output_figures_05_weekday_hour_heatmap",
+ "target": "weekday_pattern",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/05_weekday_hour_heatmap.png",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "output_figures_05_weekday_hour_heatmap",
+ "target": "hourly_pattern",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/05_weekday_hour_heatmap.png",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "output_figures_05_weekday_hour_heatmap",
+ "target": "order_timing",
+ "relation": "conceptually_related_to",
+ "confidence": "INFERRED",
+ "confidence_score": 0.95,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/05_weekday_hour_heatmap.png",
+ "source_location": null,
+ "weight": 1.0
+ }
+ ],
+ "hyperedges": [],
+ "input_tokens": 0,
+ "output_tokens": 0
+}

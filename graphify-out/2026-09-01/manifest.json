@@ -1,0 +1,164 @@
+{
+  ".claude/settings.local.json": {
+    "mtime": 1788276282.86071,
+    "seen": 1788278510.810783,
+    "ast_hash": "00e4dbdae42ef925bf9c97aa59472c4e",
+    "semantic_hash": ""
+  },
+  "R/00_setup.R": {
+    "mtime": 1788281760.380241,
+    "seen": 1788285410.7035232,
+    "ast_hash": "23136eb2350eb3780ef614bbf4eade81",
+    "semantic_hash": ""
+  },
+  "R/01_load_clean.R": {
+    "mtime": 1787593761.7875063,
+    "seen": 1788278510.8107915,
+    "ast_hash": "fe0b133d3904bc73ef403ebe126d0aca",
+    "semantic_hash": ""
+  },
+  "R/02_eda.R": {
+    "mtime": 1787593743.7606816,
+    "seen": 1788278510.8107927,
+    "ast_hash": "0655021fbdc504dad8a8f92d8c45c28a",
+    "semantic_hash": ""
+  },
+  "R/03_apriori.R": {
+    "mtime": 1787593806.4260538,
+    "seen": 1788278510.8107944,
+    "ast_hash": "c9f3012407d6aff2d50507fc95972273",
+    "semantic_hash": ""
+  },
+  "R/04_visualize_rules.R": {
+    "mtime": 1788281843.5118747,
+    "seen": 1788285410.7035453,
+    "ast_hash": "9568f650496acdd30e5125c0fbf63010",
+    "semantic_hash": ""
+  },
+  "R/05_segments_and_recommendations.R": {
+    "mtime": 1787594109.916717,
+    "seen": 1788278510.8107967,
+    "ast_hash": "dfff263d7f9fa730ad6a6034b2c5edf3",
+    "semantic_hash": ""
+  },
+  "app.R": {
+    "mtime": 1788285278.287582,
+    "seen": 1788285410.7035518,
+    "ast_hash": "e06da3abe333de7d34a79450983e360a",
+    "semantic_hash": ""
+  },
+  "run_all.R": {
+    "mtime": 1787594417.3083541,
+    "seen": 1788278510.810799,
+    "ast_hash": "97669fe436ada4e6809f1d43e0a02b8c",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1788277626.8027217,
+    "seen": 1788278510.8107998,
+    "ast_hash": "eee44fc72463bfdc37e951525f69e9b2",
+    "semantic_hash": ""
+  },
+  "output/tables/03_transactions_summary.txt": {
+    "mtime": 1788282006.672241,
+    "seen": 1788285410.7035618,
+    "ast_hash": "0f4022efd514b267d9dfc5ff1c995684",
+    "semantic_hash": ""
+  },
+  "report/MBA_Report.html": {
+    "mtime": 1787594488.715128,
+    "seen": 1788278510.8108025,
+    "ast_hash": "1711d307d70e1970988cc4c0062cbadd",
+    "semantic_hash": ""
+  },
+  "output/figures/01_top_items_frequency.png": {
+    "mtime": 1788282210.798122,
+    "seen": 1788285410.703568,
+    "ast_hash": "d6c8fc51da21bb31a30005de461472a1",
+    "semantic_hash": ""
+  },
+  "output/figures/02_top_items_revenue.png": {
+    "mtime": 1788282211.0811248,
+    "seen": 1788285410.7035708,
+    "ast_hash": "e9360712b1b95f3390b8fd92275ad0ef",
+    "semantic_hash": ""
+  },
+  "output/figures/03_basket_size_distribution.png": {
+    "mtime": 1788282211.5461292,
+    "seen": 1788285410.7035735,
+    "ast_hash": "9975ee0a805464391bad31c3d1da0472",
+    "semantic_hash": ""
+  },
+  "output/figures/04_monthly_revenue.png": {
+    "mtime": 1788282212.0161335,
+    "seen": 1788285410.7035763,
+    "ast_hash": "11a1009c597964aa67b59ad64c50d161",
+    "semantic_hash": ""
+  },
+  "output/figures/05_weekday_hour_heatmap.png": {
+    "mtime": 1788282212.2281356,
+    "seen": 1788285410.7035794,
+    "ast_hash": "00cd309e8a18d2e11158cc75bf941f4f",
+    "semantic_hash": ""
+  },
+  "output/figures/06_top_countries.png": {
+    "mtime": 1788282212.4351377,
+    "seen": 1788285410.7035825,
+    "ast_hash": "ef64e5df73730ba0f13adabcd9df98a6",
+    "semantic_hash": ""
+  },
+  "output/figures/07_item_frequency_relative.png": {
+    "mtime": 1788282006.7192414,
+    "seen": 1788285410.7035854,
+    "ast_hash": "e1a8206925f9983839163f34f8b62980",
+    "semantic_hash": ""
+  },
+  "output/figures/08_threshold_sensitivity.png": {
+    "mtime": 1788282013.3472998,
+    "seen": 1788285410.7035878,
+    "ast_hash": "5d896b3bb8baa69a7d1e470da0037418",
+    "semantic_hash": ""
+  },
+  "output/figures/09_rules_scatter.png": {
+    "mtime": 1788282013.708303,
+    "seen": 1788285410.7035906,
+    "ast_hash": "b57bbcff8425d93235965cb744914e6a",
+    "semantic_hash": ""
+  },
+  "output/figures/10_rules_two_key.png": {
+    "mtime": 1787594459.7933855,
+    "seen": 1788278510.8108134,
+    "ast_hash": "d1702de0fe277a698ef96ee30a408df2",
+    "semantic_hash": ""
+  },
+  "output/figures/11_rules_graph_top25_lift.png": {
+    "mtime": 1787594459.9387932,
+    "seen": 1788278510.8108149,
+    "ast_hash": "408423e7dcc0c8c9310b3555ec5b2172",
+    "semantic_hash": ""
+  },
+  "output/figures/12_rules_grouped_matrix.png": {
+    "mtime": 1787594460.8555152,
+    "seen": 1788278510.810816,
+    "ast_hash": "f9786211c996d7d4ccc8499462df7674",
+    "semantic_hash": ""
+  },
+  "output/figures/13_rules_paracoord.png": {
+    "mtime": 1787594460.9941678,
+    "seen": 1788278510.8108172,
+    "ast_hash": "d13416389e1179b993bad5ecb1411b21",
+    "semantic_hash": ""
+  },
+  "output/figures/14_top_rules_by_lift_bars.png": {
+    "mtime": 1788282013.9383051,
+    "seen": 1788285410.7036057,
+    "ast_hash": "4cfc895d7572e954c4819fe2045480d6",
+    "semantic_hash": ""
+  },
+  "output/figures/15_cross_sell_opportunity_value.png": {
+    "mtime": 1788282022.3663797,
+    "seen": 1788285410.7036085,
+    "ast_hash": "16424eb1923944d39abd5a6ea57b6c09",
+    "semantic_hash": ""
+  }
+}

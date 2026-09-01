@@ -1,0 +1,514 @@
+---
+title: "Market Basket Analysis of Online Retail Transactions"
+subtitle: "Apriori and Association Rule Mining on the UCI Online Retail dataset"
+author: "Data Warehousing & Data Mining"
+date: "`r format(Sys.Date(), '%d %B %Y')`"
+output:
+  html_document:
+    theme: flatly
+    toc: true
+    toc_float: true
+    toc_depth: 3
+    number_sections: true
+    df_print: paged
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE,
+                      fig.align = "center", fig.width = 9, fig.height = 5.5)
+
+# Knit from the project root, not from report/
+knitr::opts_knit$set(root.dir = normalizePath(".."))
+```
+
+```{r load}
+# root.dir above already points at the project root, so paths are relative to it
+source("R/00_setup.R")
+
+# knitr resolves chunk paths against the document, not against root.dir, so pin
+# the output directories to absolute paths before reading anything.
+DIR_PROC <- normalizePath("data/processed", winslash = "/", mustWork = TRUE)
+DIR_FIG  <- normalizePath("output/figures", winslash = "/", mustWork = TRUE)
+DIR_TAB  <- normalizePath("output/tables",  winslash = "/", mustWork = TRUE)
+
+retail    <- readRDS(file.path(DIR_PROC, "retail_clean.rds"))
+trans     <- readRDS(file.path(DIR_PROC, "transactions.rds"))
+rules     <- readRDS(file.path(DIR_PROC, "rules_significant.rds"))
+itemsets  <- readRDS(file.path(DIR_PROC, "itemsets.rds"))
+
+tab <- function(name) read.csv(file.path(DIR_TAB, paste0(name, ".csv")))
+# rel_path = FALSE keeps the absolute path; pandoc embeds the PNG in the HTML
+fig <- function(name) knitr::include_graphics(file.path(DIR_FIG, paste0(name, ".png")),
+                                             rel_path = FALSE)
+```
+
+# Introduction
+
+**Objective.** Discover which products customers of a UK online gift retailer buy
+*together*, and convert those co-occurrence patterns into actionable
+merchandising rules.
+
+**Dataset.** UCI Machine Learning Repository #352, *Online Retail* — every
+transaction of a UK-based, registered, non-store online retailer between
+**1 December 2010 and 9 December 2011**. The company mainly sells unique
+all-occasion giftware; many customers are wholesalers.
+
+| Attribute | Meaning |
+|---|---|
+| `InvoiceNo`   | Transaction ID. A leading `C` marks a cancellation. |
+| `StockCode`   | Product code. |
+| `Description` | Product name. |
+| `Quantity`    | Units of the product on that invoice line. |
+| `InvoiceDate` | Timestamp of the transaction. |
+| `UnitPrice`   | Unit price in GBP. |
+| `CustomerID`  | Customer number (often missing). |
+| `Country`     | Country of the customer. |
+
+**Method.** The Apriori algorithm (Agrawal & Srikant, 1994) as implemented in the
+R package `arules`, with rule visualisation from `arulesViz`.
+
+## The three measures
+
+For an association rule $X \Rightarrow Y$ over a set of $N$ transactions:
+
+$$
+\text{support}(X \Rightarrow Y) = P(X \cup Y) = \frac{|\{t : X \cup Y \subseteq t\}|}{N}
+$$
+
+$$
+\text{confidence}(X \Rightarrow Y) = P(Y \mid X) = \frac{\text{support}(X \cup Y)}{\text{support}(X)}
+$$
+
+$$
+\text{lift}(X \Rightarrow Y) = \frac{\text{confidence}(X \Rightarrow Y)}{\text{support}(Y)} = \frac{P(X \cup Y)}{P(X)P(Y)}
+$$
+
+* **Support** — how common the pattern is. Governs whether a rule is worth acting on at all.
+* **Confidence** — how reliable it is. High confidence alone is misleading when $Y$ is a bestseller bought by nearly everyone.
+* **Lift** — how much better than chance. $\text{lift} = 1$ means independence, $> 1$ means the products genuinely attract each other, $< 1$ means they repel.
+
+**The Apriori property**, which makes the search tractable: *every subset of a
+frequent itemset is itself frequent*. Equivalently, if an itemset is
+infrequent, every superset of it is infrequent too and can be pruned without
+being counted. Without this, mining `r format(ncol(trans), big.mark = ",")`
+distinct products would mean evaluating $2^{`r ncol(trans)`}$ candidate itemsets.
+
+---
+
+# Data preparation
+
+## Quality audit of the raw file
+
+```{r audit}
+knitr::kable(tab("01_data_quality_audit"), format.args = list(big.mark = ","))
+```
+
+Four problems had to be resolved before mining:
+
+1. **Cancellations** (`InvoiceNo` starting with `C`) and **negative quantities**
+   are returns, not purchases. Leaving them in would fabricate co-occurrences
+   that never happened.
+2. **Zero or negative unit prices** are adjustments and free samples.
+3. **Non-product stock codes** (`POST`, `DOT`, `M`, `BANK CHARGES`,
+   `AMAZONFEE`, …) are postage and administrative lines. They appear on a huge
+   share of invoices, so they would dominate every rule while carrying no
+   merchandising meaning.
+4. **Free-text junk descriptions** ("damaged", "check", "?", "found", "lost") are
+   warehouse notes, not products.
+
+Additionally, each `StockCode` was pinned to a single canonical description
+(descriptions drift across rows for the same product), duplicate item lines
+within an invoice were collapsed, and **single-item baskets were dropped** —
+a basket of one contains no co-occurrence information and only dilutes support.
+
+## Result
+
+```{r cleaning}
+knitr::kable(tab("01_cleaning_summary"))
+```
+
+---
+
+# Exploratory analysis
+
+## What sells most often
+
+```{r fig-items}
+fig("01_top_items_frequency")
+```
+
+```{r fig-revenue}
+fig("02_top_items_revenue")
+```
+
+Frequency and revenue rank products very differently. `WHITE HANGING HEART
+T-LIGHT HOLDER` leads on basket count, but high-ticket items such as
+`REGENCY CAKESTAND 3 TIER` and `PAPER CRAFT , LITTLE BIRDIE` climb the revenue
+table. Market basket analysis works on the *frequency* view — which is why a
+rule with a modest support figure can still be commercially significant.
+
+## Basket size
+
+```{r fig-basket}
+fig("03_basket_size_distribution")
+```
+
+```{r basket-stats}
+knitr::kable(tab("02_basket_size_stats"))
+```
+
+The distribution is heavily right-skewed. The long tail is the wholesale
+customers — baskets of a hundred or more distinct products. These large baskets
+generate an enormous number of item pairs and are the main reason support values
+in this dataset stay low even for strong rules.
+
+## Time and geography
+
+```{r fig-month}
+fig("04_monthly_revenue")
+```
+
+```{r fig-heat}
+fig("05_weekday_hour_heatmap")
+```
+
+```{r fig-country}
+fig("06_top_countries")
+```
+
+Three operational facts fall out: revenue peaks sharply in the pre-Christmas
+quarter (September–November), trading is concentrated on weekday business hours
+with essentially no Saturday activity, and the UK dominates revenue while the
+Netherlands, Ireland and Germany form a meaningful second tier.
+
+---
+
+# Apriori: frequent itemsets
+
+## The transaction object
+
+```{r trans-summary}
+summary(trans)
+```
+
+Density is around 0.75%, i.e. the average basket touches under 1% of the
+catalogue. Extreme sparsity is normal in retail and is exactly the condition
+Apriori's pruning is designed for.
+
+```{r fig-itemfreq}
+fig("07_item_frequency_relative")
+```
+
+## Frequent itemsets at 1% support
+
+```{r itemsets}
+knitr::kable(tab("03_frequent_itemset_counts"),
+             col.names = c("Itemset size (k)", "Frequent itemsets found"))
+```
+
+```{r itemsets-top}
+knitr::kable(head(tab("03_top_multi_item_itemsets"), 15))
+```
+
+---
+
+# Association rules
+
+## Parameters and the pipeline of filters
+
+```{r params}
+knitr::kable(data.frame(
+  Parameter = c("Minimum support", "Minimum confidence", "Rule length",
+                "Minimum lift", "Significance test"),
+  Value = c(paste0(PARAMS$support * 100, "% (about ",
+                   round(PARAMS$support * length(trans)), " baskets)"),
+            paste0(PARAMS$confidence * 100, "%"),
+            paste(PARAMS$minlen, "to", PARAMS$maxlen, "items"),
+            paste(">", PARAMS$min_lift),
+            "Fisher's exact test, Benjamini-Hochberg adjusted, p < 0.05")))
+```
+
+Rules were filtered in four stages:
+
+1. **Apriori** with the support and confidence floors above.
+2. **Lift > 1** — discard rules no better than chance.
+3. **Redundancy removal** (`is.redundant`) — a rule is redundant when a *more
+   general* rule (a subset of its antecedent) achieves at least the same
+   confidence. The extra condition earns nothing and only clutters the output.
+4. **Statistical significance** — Fisher's exact test on each rule's 2×2
+   contingency table, with Benjamini–Hochberg correction for the fact that
+   thousands of rules are being tested at once.
+
+`r length(rules)` rules survive all four stages.
+
+## The rule landscape
+
+```{r fig-scatter}
+fig("09_rules_scatter")
+```
+
+```{r fig-twokey}
+fig("10_rules_two_key")
+```
+
+The scatter shows the classic trade-off. Rules in the upper-left are rare but
+almost deterministic; rules on the right are common but weaker. There is no
+single "best" corner — which one matters depends on whether you are designing a
+homepage widget (needs support) or a checkout prompt (needs confidence).
+
+## Strongest rules by lift
+
+```{r top-lift}
+knitr::kable(tab("03_top_rules_by_lift"))
+```
+
+```{r fig-liftbars}
+fig("14_top_rules_by_lift_bars")
+```
+
+## Strongest rules by confidence
+
+```{r top-conf}
+knitr::kable(tab("03_top_rules_by_confidence"))
+```
+
+## Most frequent rules
+
+```{r top-supp}
+knitr::kable(tab("03_top_rules_by_support"))
+```
+
+## Rules as a network
+
+```{r fig-graph}
+fig("11_rules_graph_top25_lift")
+```
+
+```{r fig-grouped}
+fig("12_rules_grouped_matrix")
+```
+
+```{r fig-para}
+fig("13_rules_paracoord")
+```
+
+The graph makes the structure obvious: the highest-lift rules are not scattered
+across the catalogue, they form **tight clusters within product families** —
+the herb marker set, the regency tea set, the woodland/spaceboy children's
+range, the jumbo bag colourways. Customers buy *collections*, not individual
+objects.
+
+## Sensitivity to the thresholds
+
+```{r fig-sens}
+fig("08_threshold_sensitivity")
+```
+
+```{r sens-table}
+knitr::kable(tab("03_threshold_sensitivity"))
+```
+
+Rule count falls roughly geometrically as minimum support rises — the practical
+reason support, not confidence, is the parameter to tune first. Confidence
+mostly trims an already-determined candidate pool.
+
+---
+
+# Segment analysis
+
+## UK versus international
+
+```{r seg}
+knitr::kable(tab("05_segment_comparison"))
+```
+
+```{r seg-rules}
+knitr::kable(head(tab("05_top_rules_international"), 10),
+             caption = "Top international rules by lift")
+```
+
+International baskets are far fewer, so a higher support floor (2%) is needed
+to get a comparable rule count. Their association structure is different:
+international customers (largely wholesalers) buy in complete product ranges,
+which produces very high-lift but narrow rules.
+
+## Seasonal shift
+
+```{r season}
+knitr::kable(tab("05_season_comparison"))
+```
+
+```{r season-rules}
+knitr::kable(head(tab("05_festive_only_rules"), 15),
+             caption = "Rules that appear only in the September-November window")
+```
+
+The festive quarter yields substantially more rules from *fewer* baskets — gift
+buying is more patterned than routine buying. Rules that exist only in this
+window are the ones worth building seasonal campaigns around.
+
+---
+
+# From rules to action
+
+## A rule-based recommender
+
+```{r recsys}
+knitr::kable(tab("05_recommender_demo"))
+```
+
+Given a partial basket, every rule whose antecedent is fully contained in it
+"fires"; the consequents the customer has not already taken, ranked by lift, are
+the recommendations. This is a complete cold-start-free recommender that needs
+no customer history at all — only the current basket.
+
+## Quantified opportunity
+
+For each rule, the baskets containing the antecedent but *missing* the
+consequent are counted directly from support and coverage — no basket scan
+needed, since coverage is $\text{supp}(X)$ and support is $\text{supp}(X \cup Y)$:
+
+$$
+\text{missed baskets} = \big(\text{coverage} - \text{support}\big) \times N
+$$
+
+Multiplying by the rule's confidence and the consequent's average line value
+gives an order-of-magnitude estimate of the revenue a well-placed cross-sell
+prompt could recover.
+
+```{r value}
+knitr::kable(head(tab("05_cross_sell_opportunity_value"), 15))
+```
+
+```{r fig-value}
+fig("15_cross_sell_opportunity_value")
+```
+
+```{r value-total}
+val  <- tab("05_cross_sell_opportunity_value")
+best <- tab("05_cross_sell_best_rule_per_product")
+
+gbp <- function(x) paste0("GBP ", formatC(round(x), format = "d", big.mark = ","))
+
+knitr::kable(data.frame(
+  Basis = c("Naive sum over all rules",
+            "Best rule per consequent product",
+            "Top 20 products of those",
+            "Actual revenue in the period"),
+  Estimate = gbp(c(sum(val$PotentialRevenue,  na.rm = TRUE),
+                   sum(best$PotentialRevenue, na.rm = TRUE),
+                   sum(head(best, 20)$PotentialRevenue, na.rm = TRUE),
+                   sum(retail$Revenue))),
+  Note = c("Double counts -- upper bound only",
+           "Defensible headroom estimate",
+           "Where to start",
+           "For scale")))
+```
+
+Summing across all `r nrow(val)` rules badly double counts: many rules share a
+consequent and fire on the same basket. Keeping only the single best rule per
+consequent product collapses them to `r nrow(best)` distinct opportunities and
+gives the defensible figure — roughly
+`r sprintf("%.0f%%", 100 * sum(best$PotentialRevenue, na.rm = TRUE) / sum(retail$Revenue))`
+of realised revenue in the period.
+
+Note that the biggest opportunities are **not** the highest-lift rules. The herb
+marker rules that top the lift table are worth a few hundred pounds each,
+because the products are cheap and the sets are already almost always bought
+complete. The money is in mid-lift, high-support rules on expensive items —
+`ROSES REGENCY TEACUP AND SAUCER ⇒ REGENCY CAKESTAND 3 TIER` has a lift of only
+4.6, but it fires on hundreds of baskets and the cakestand is a high-ticket
+product. **Lift finds the pattern; support and price decide whether it is worth
+acting on.**
+
+---
+
+# Findings and recommendations
+
+**1. Products sell as families, not as individuals.** Nearly every high-lift
+rule links members of one product set — herb markers, the regency tea range, the
+retrospot lunch bags, the woodland/spaceboy children's line. Lift values of
+50–75× are enormous, and mean a customer holding two herb markers is
+overwhelmingly likely to be completing the set.
+
+*Action:* sell and merchandise these as bundles. A "complete the set" prompt on
+the product page is the single highest-value intervention this analysis
+supports, and the rules identify exactly which sets qualify.
+
+**2. Colourway substitution is real and predictable.** Rules link the same
+product in different colours (red / pink / blue retrospot bags, white / red
+hanging heart holders). Customers buying one variant frequently buy another.
+
+*Action:* show the colour family, not just the SKU, and keep variants in stock
+together — a stock-out on one variant depresses sales of the whole cluster.
+
+**3. High confidence without lift is a trap.** Rules ending in
+`WHITE HANGING HEART T-LIGHT HOLDER` reach high confidence simply because it
+appears in over 12% of all baskets. Lift corrects for this, which is why it was
+used as the primary ranking measure throughout.
+
+*Action:* never rank recommendations on confidence alone.
+
+**4. Association structure is seasonal.** Thousands of rules exist only in the
+September–November window.
+
+*Action:* re-mine the rules quarterly rather than treating the rule set as
+static, and hold separate rule sets for the festive campaign.
+
+**5. Segment the model.** UK and international baskets have measurably different
+association structures. A single global rule set serves neither well.
+
+*Action:* maintain per-segment rule sets, at minimum UK versus international.
+
+## Limitations
+
+* **Wholesale contamination.** Very large baskets are wholesale orders, not
+  consumer shopping. They inflate co-occurrence counts. A production system
+  should mine consumer and wholesale baskets separately.
+* **Correlation, not causation.** A rule says two products appear together; it
+  does not prove that promoting one *causes* the other to sell. Validation
+  requires an A/B test.
+* **One year of data.** Trend versus seasonality cannot be separated from a
+  single annual cycle.
+* **Missing `CustomerID` on ~25% of rows** prevents customer-level basket
+  analysis, so this study is purely transaction-level.
+* **Support floor hides the long tail.** At 1% support, products selling fewer
+  than ~183 baskets a year can never enter a rule, however strong their
+  associations are. Niche cross-sells are invisible to this model.
+
+## Possible extensions
+
+* **FP-Growth** (`arules::fim4r` or `rCBA`) for a runtime comparison against
+  Apriori on the same data.
+* **Sequential pattern mining** (`arulesSequences`, cSPADE) using `CustomerID`
+  and `InvoiceDate` to find what customers buy *next*, not just *together*.
+* **Product hierarchies** — aggregating SKUs into categories would lift support
+  values enough to reveal cross-category rules the SKU-level model misses.
+* **Negative association rules** — which products *suppress* each other, useful
+  for detecting cannibalisation between variants.
+
+---
+
+# References
+
+Agrawal, R. & Srikant, R. (1994). *Fast Algorithms for Mining Association Rules*.
+Proceedings of the 20th VLDB Conference, 487–499.
+
+Chen, D., Sain, S. L. & Guo, K. (2012). *Data mining for the online retail
+industry*. Journal of Database Marketing & Customer Strategy Management, 19(3),
+197–208.
+
+Hahsler, M., Grün, B. & Hornik, K. (2005). *arules — A Computational Environment
+for Mining Association Rules and Frequent Item Sets*. Journal of Statistical
+Software, 14(15).
+
+Hahsler, M. & Chelluboina, S. (2011). *Visualizing Association Rules: Introduction
+to the R-extension Package arulesViz*.
+
+Dua, D. & Graff, C. UCI Machine Learning Repository, dataset 352: *Online Retail*.
+<https://archive.ics.uci.edu/dataset/352/online+retail>
+
+```{r session}
+sessionInfo()
+```

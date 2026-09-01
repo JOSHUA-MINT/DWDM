@@ -1,0 +1,944 @@
+{
+ "nodes": [
+ {
+ "id": "readme_md",
+ "label": "Market Basket Analysis of Online Retail Transactions",
+ "file_type": "document",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": null,
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "03_transactions_summary_txt",
+ "label": "Transactions Summary",
+ "file_type": "document",
+ "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+ "source_location": null,
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "mba_report_html",
+ "label": "MBA Report",
+ "file_type": "document",
+ "source_file": "/home/joshua/Downloads/DWDM/report/MBA_Report.html",
+ "source_location": null,
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "uci_online_retail_dataset",
+ "label": "UCI Online Retail Dataset",
+ "file_type": "concept",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 3-4",
+ "source_url": "https://archive.ics.uci.edu/dataset/352/online+retail",
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "apriori_algorithm",
+ "label": "Apriori Algorithm",
+ "file_type": "concept",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 122",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "association_rule_mining",
+ "label": "Association Rule Mining",
+ "file_type": "concept",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 3",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "r_language",
+ "label": "R Programming Language",
+ "file_type": "concept",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 5",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "arules_package",
+ "label": "arules R Package",
+ "file_type": "concept",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 5",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "arulesviz_package",
+ "label": "arulesViz R Package",
+ "file_type": "concept",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 5",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "support_measure",
+ "label": "Support",
+ "file_type": "concept",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 136",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "confidence_measure",
+ "label": "Confidence",
+ "file_type": "concept",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 137",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "lift_measure",
+ "label": "Lift",
+ "file_type": "concept",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 138",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "fishers_exact_test",
+ "label": "Fisher's Exact Test",
+ "file_type": "concept",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 127",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "benjamini_hochberg_correction",
+ "label": "Benjamini-Hochberg Correction",
+ "file_type": "concept",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 128",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "item_matrix",
+ "label": "itemMatrix Sparse Format",
+ "file_type": "concept",
+ "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+ "source_location": "line 1",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "white_hanging_heart_tlight_holder",
+ "label": "WHITE HANGING HEART T-LIGHT HOLDER",
+ "file_type": "concept",
+ "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+ "source_location": "line 6",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "jumbo_bag_red_retrospot",
+ "label": "JUMBO BAG RED RETROSPOT",
+ "file_type": "concept",
+ "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+ "source_location": "line 6",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "regency_cakestand_3_tier",
+ "label": "REGENCY CAKESTAND 3 TIER",
+ "file_type": "concept",
+ "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+ "source_location": "line 8",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "party_bunting",
+ "label": "PARTY BUNTING",
+ "file_type": "concept",
+ "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+ "source_location": "line 8",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "lunch_bag_red_retrospot",
+ "label": "LUNCH BAG RED RETROSPOT",
+ "file_type": "concept",
+ "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+ "source_location": "line 10",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "dwrm_rproj",
+ "label": "DWDM.Rproj",
+ "file_type": "code",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 15",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "run_all_r",
+ "label": "run_all.R",
+ "file_type": "code",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 23",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "setup_r",
+ "label": "R/00_setup.R",
+ "file_type": "code",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 18",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "mba_report_rmd",
+ "label": "report/MBA_Report.Rmd",
+ "file_type": "code",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 31",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "params_configuration",
+ "label": "PARAMS Configuration",
+ "file_type": "rationale",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 80",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "product_family_clustering",
+ "label": "Product Family Clustering",
+ "file_type": "rationale",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 148-152",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "colourway_substitution",
+ "label": "Colourway Substitution Pattern",
+ "file_type": "rationale",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 154-156",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "seasonal_association_structure",
+ "label": "Seasonal Association Structure",
+ "file_type": "rationale",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 158-160",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "segment_differences",
+ "label": "Segment Differences",
+ "file_type": "rationale",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 162-163",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "cross_sell_headroom",
+ "label": "Cross-Sell Revenue Headroom",
+ "file_type": "rationale",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 165-171",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "lift_as_primary_ranking",
+ "label": "Lift as Primary Ranking Measure",
+ "file_type": "rationale",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 140-143",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "boombox_ipod_classic",
+ "label": "BOOMBOX IPOD CLASSIC",
+ "file_type": "concept",
+ "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+ "source_location": "line 67",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "usb_office_mirror_ball",
+ "label": "USB OFFICE MIRROR BALL",
+ "file_type": "concept",
+ "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+ "source_location": "line 68",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "colour_spaceboy_pen",
+ "label": "10 COLOUR SPACEBOY PEN",
+ "file_type": "concept",
+ "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+ "source_location": "line 69",
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "agrawal_srikant_1994",
+ "label": "Agrawal & Srikant 1994 - Fast Algorithms for Mining Association Rules",
+ "file_type": "paper",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 226",
+ "source_url": null,
+ "captured_at": null,
+ "author": "Agrawal, R. & Srikant, R.",
+ "contributor": null
+ },
+ {
+ "id": "hahsler_gruen_hornik_2005",
+ "label": "Hahsler, Grün & Hornik 2005 - arules: A Computational Environment for Mining Association Rules",
+ "file_type": "paper",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 228-229",
+ "source_url": null,
+ "captured_at": null,
+ "author": "Hahsler, M., Grün, B. & Hornik, K.",
+ "contributor": null
+ },
+ {
+ "id": "chen_sain_guo_2012",
+ "label": "Chen, Sain & Guo 2012 - Data mining for the online retail industry",
+ "file_type": "paper",
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 231-232",
+ "source_url": null,
+ "captured_at": null,
+ "author": "Chen, D., Sain, S. L. & Guo, K.",
+ "contributor": null
+ }
+ ],
+ "edges": [
+ {
+ "source": "readme_md",
+ "target": "uci_online_retail_dataset",
+ "relation": "references",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 3-4",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "apriori_algorithm",
+ "relation": "references",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 122",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "association_rule_mining",
+ "relation": "references",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 3",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "r_language",
+ "relation": "references",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 5",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "arules_package",
+ "relation": "references",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 5",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "arulesviz_package",
+ "relation": "references",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 5",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "support_measure",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 136",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "confidence_measure",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 137",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "lift_measure",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 138",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "fishers_exact_test",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 127",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "benjamini_hochberg_correction",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 128",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "params_configuration",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 80-90",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "product_family_clustering",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 148-152",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "colourway_substitution",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 154-156",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "seasonal_association_structure",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 158-160",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "segment_differences",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 162-163",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "cross_sell_headroom",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 165-171",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "lift_as_primary_ranking",
+ "relation": "rationale_for",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 140-143",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "dwrm_rproj",
+ "relation": "references",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 15",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "run_all_r",
+ "relation": "references",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 23",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "setup_r",
+ "relation": "references",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 18",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "mba_report_rmd",
+ "relation": "references",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 31",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "agrawal_srikant_1994",
+ "relation": "cites",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 226",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "hahsler_gruen_hornik_2005",
+ "relation": "cites",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 228-229",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "chen_sain_guo_2012",
+ "relation": "cites",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 231-232",
+ "weight": 1.0
+ },
+ {
+ "source": "03_transactions_summary_txt",
+ "target": "item_matrix",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+ "source_location": "line 1",
+ "weight": 1.0
+ },
+ {
+ "source": "03_transactions_summary_txt",
+ "target": "white_hanging_heart_tlight_holder",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+ "source_location": "line 6-7",
+ "weight": 1.0
+ },
+ {
+ "source": "03_transactions_summary_txt",
+ "target": "jumbo_bag_red_retrospot",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+ "source_location": "line 6-7",
+ "weight": 1.0
+ },
+ {
+ "source": "03_transactions_summary_txt",
+ "target": "regency_cakestand_3_tier",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+ "source_location": "line 8-9",
+ "weight": 1.0
+ },
+ {
+ "source": "03_transactions_summary_txt",
+ "target": "party_bunting",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+ "source_location": "line 8-9",
+ "weight": 1.0
+ },
+ {
+ "source": "03_transactions_summary_txt",
+ "target": "lunch_bag_red_retrospot",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+ "source_location": "line 10-11",
+ "weight": 1.0
+ },
+ {
+ "source": "03_transactions_summary_txt",
+ "target": "boombox_ipod_classic",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+ "source_location": "line 67",
+ "weight": 1.0
+ },
+ {
+ "source": "03_transactions_summary_txt",
+ "target": "usb_office_mirror_ball",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+ "source_location": "line 68",
+ "weight": 1.0
+ },
+ {
+ "source": "03_transactions_summary_txt",
+ "target": "colour_spaceboy_pen",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+ "source_location": "line 69",
+ "weight": 1.0
+ },
+ {
+ "source": "apriori_algorithm",
+ "target": "support_measure",
+ "relation": "conceptually_related_to",
+ "confidence": "INFERRED",
+ "confidence_score": 0.95,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "apriori_algorithm",
+ "target": "confidence_measure",
+ "relation": "conceptually_related_to",
+ "confidence": "INFERRED",
+ "confidence_score": 0.95,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "apriori_algorithm",
+ "target": "lift_measure",
+ "relation": "conceptually_related_to",
+ "confidence": "INFERRED",
+ "confidence_score": 0.95,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "uci_online_retail_dataset",
+ "target": "item_matrix",
+ "relation": "shares_data_with",
+ "confidence": "INFERRED",
+ "confidence_score": 0.95,
+ "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+ "source_location": "line 1",
+ "weight": 1.0
+ },
+ {
+ "source": "uci_online_retail_dataset",
+ "target": "03_transactions_summary_txt",
+ "relation": "shares_data_with",
+ "confidence": "INFERRED",
+ "confidence_score": 0.95,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "03_transactions_summary_txt",
+ "relation": "references",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 1-3",
+ "weight": 1.0
+ },
+ {
+ "source": "readme_md",
+ "target": "mba_report_html",
+ "relation": "references",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 31",
+ "weight": 1.0
+ },
+ {
+ "source": "mba_report_rmd",
+ "target": "mba_report_html",
+ "relation": "implements",
+ "confidence": "INFERRED",
+ "confidence_score": 0.95,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 31-38",
+ "weight": 1.0
+ },
+ {
+ "source": "arules_package",
+ "target": "apriori_algorithm",
+ "relation": "implements",
+ "confidence": "INFERRED",
+ "confidence_score": 0.95,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "arulesviz_package",
+ "target": "association_rule_mining",
+ "relation": "implements",
+ "confidence": "INFERRED",
+ "confidence_score": 0.95,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "apriori_algorithm",
+ "target": "params_configuration",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 83-90",
+ "weight": 1.0
+ },
+ {
+ "source": "benjamini_hochberg_correction",
+ "target": "fishers_exact_test",
+ "relation": "conceptually_related_to",
+ "confidence": "INFERRED",
+ "confidence_score": 0.85,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 127-128",
+ "weight": 1.0
+ },
+ {
+ "source": "lift_measure",
+ "target": "support_measure",
+ "relation": "conceptually_related_to",
+ "confidence": "INFERRED",
+ "confidence_score": 0.95,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 136-138",
+ "weight": 1.0
+ },
+ {
+ "source": "lift_measure",
+ "target": "confidence_measure",
+ "relation": "conceptually_related_to",
+ "confidence": "INFERRED",
+ "confidence_score": 0.95,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 136-138",
+ "weight": 1.0
+ },
+ {
+ "source": "cross_sell_headroom",
+ "target": "lift_measure",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 165-171",
+ "weight": 1.0
+ },
+ {
+ "source": "cross_sell_headroom",
+ "target": "support_measure",
+ "relation": "conceptually_related_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md",
+ "source_location": "line 165-171",
+ "weight": 1.0
+ }
+ ],
+ "hyperedges": [
+ {
+ "id": "hyper_apriori_pipeline",
+ "label": "Apriori Pipeline Parameters",
+ "nodes": ["support_measure", "confidence_measure", "lift_measure", "fishers_exact_test", "benjamini_hochberg_correction", "params_configuration"],
+ "relation": "implement",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md"
+ },
+ {
+ "id": "hyper_project_structure",
+ "label": "Project Scripts",
+ "nodes": ["setup_r", "run_all_r", "dwrm_rproj", "mba_report_rmd", "mba_report_html"],
+ "relation": "participate_in",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md"
+ },
+ {
+ "id": "hyper_findings",
+ "label": "Key Findings",
+ "nodes": ["product_family_clustering", "colourway_substitution", "seasonal_association_structure", "segment_differences", "cross_sell_headroom", "lift_as_primary_ranking"],
+ "relation": "form",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/README.md"
+ }
+ ],
+ "input_tokens": 0,
+ "output_tokens": 0
+}

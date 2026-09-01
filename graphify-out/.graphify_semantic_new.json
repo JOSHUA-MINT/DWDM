@@ -1,0 +1,5114 @@
+{
+  "nodes": [
+    {
+      "id": "output_figures_01_top_items_frequency_chart",
+      "label": "Top 20 products by number of baskets",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "uci_online_retail_dataset",
+      "label": "UCI Online Retail dataset (cleaned transactions)",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "basket_frequency_metric",
+      "label": "Basket frequency (number of baskets containing the product)",
+      "file_type": "rationale",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "white_hanging_heart_t_light_holder",
+      "label": "WHITE HANGING HEART T-LIGHT HOLDER",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jumbo_bag_red_retrospot",
+      "label": "JUMBO BAG RED RETROSPOT",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "regency_cakestand_3_tier",
+      "label": "REGENCY CAKESTAND 3 TIER",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "party_bunting",
+      "label": "PARTY BUNTING",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "lunch_bag_red_retrospot",
+      "label": "LUNCH BAG RED RETROSPOT",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assorted_colour_bird_ornament",
+      "label": "ASSORTED COLOUR BIRD ORNAMENT",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "set_of_3_cake_tins_pantry_design",
+      "label": "SET OF 3 CAKE TINS PANTRY DESIGN",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "popcorn_holder",
+      "label": "POPCORN HOLDER",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pack_of_72_retrospot_cake_cases",
+      "label": "PACK OF 72 RETROSPOT CAKE CASES",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "lunch_bag_suki_design",
+      "label": "LUNCH BAG SUKI DESIGN",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "lunch_bag_black_skull",
+      "label": "LUNCH BAG BLACK SKULL",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "natural_slate_heart_chalkboard",
+      "label": "NATURAL SLATE HEART CHALKBOARD",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jumbo_bag_vintage_doily",
+      "label": "JUMBO BAG VINTAGE DOILY",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jumbo_bag_pink_polkadot",
+      "label": "JUMBO BAG PINK POLKADOT",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "heart_of_wicker_small",
+      "label": "HEART OF WICKER SMALL",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jumbo_storage_bag_suki",
+      "label": "JUMBO STORAGE BAG SUKI",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jumbo_shopper_vintage_red_paisley",
+      "label": "JUMBO SHOPPER VINTAGE RED PAISLEY",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "lunch_bag_spaceboy_design",
+      "label": "LUNCH BAG SPACEBOY DESIGN",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "paper_chain_kit_50s_christmas",
+      "label": "PAPER CHAIN KIT 50'S CHRISTMAS",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jam_making_set_printed",
+      "label": "JAM MAKING SET PRINTED",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_02_top_items_revenue",
+      "label": "Top 20 Products by Revenue",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "regency_cakestand_3_tier",
+      "label": "Regency Cakestand 3 Tier",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "white_hanging_heart_tlight_holder",
+      "label": "White Hanging Heart T-Light Holder",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "party_bunting",
+      "label": "Party Bunting",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jumbo_bag_red_retrospot",
+      "label": "Jumbo Bag Red Retrospot",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "paper_chain_kit_50s_christmas",
+      "label": "Paper Chain Kit 50's Christmas",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "assorted_colour_bird_ornament",
+      "label": "Assorted Colour Bird Ornament",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "rabbit_night_light",
+      "label": "Rabbit Night Light",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "chilli_lights",
+      "label": "Chilli Lights",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "spotty_bunting",
+      "label": "Spotty Bunting",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jumbo_bag_pink_polkadot",
+      "label": "Jumbo Bag Pink Polkadot",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jumbo_bag_vintage_doily",
+      "label": "Jumbo Bag Vintage Doily",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "popcorn_holder",
+      "label": "Popcorn Holder",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "set_of_3_cake_tins_pantry_design",
+      "label": "Set of 3 Cake Tins Pantry Design",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jam_making_set_with_jars",
+      "label": "Jam Making Set with Jars",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "black_record_cover_frame",
+      "label": "Black Record Cover Frame",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "wood_black_board_ant_white_finish",
+      "label": "Wood Black Board Ant White Finish",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "lunch_bag_red_retrospot",
+      "label": "Lunch Bag Red Retrospot",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "doormat_keep_calm_and_come_in",
+      "label": "Doormat Keep Calm and Come In",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jumbo_bag_strawberry",
+      "label": "Jumbo Bag Strawberry",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "paper_chain_kit_vintage_christmas",
+      "label": "Paper Chain Kit Vintage Christmas",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "product_revenue_ranking",
+      "label": "Product Revenue Ranking",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "transaction_data",
+      "label": "Transaction Data",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ecommerce_sales_analysis",
+      "label": "E-Commerce Sales Analysis",
+      "file_type": "rationale",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_03_basket_size_distribution",
+      "label": "Basket Size Distribution Histogram",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/03_basket_size_distribution.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "basket_size_distribution_concept",
+      "label": "Basket Size Distribution",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/03_basket_size_distribution.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "basket_size_mean_metric",
+      "label": "Mean Basket Size (28.2 items)",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/03_basket_size_distribution.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "basket_size_median_metric",
+      "label": "Median Basket Size (17 items)",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/03_basket_size_distribution.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "basket_size_right_skew",
+      "label": "Right-Skewed Basket Size Distribution",
+      "file_type": "rationale",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/03_basket_size_distribution.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "distinct_products_per_basket",
+      "label": "Distinct Products Per Basket",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/03_basket_size_distribution.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_04_monthly_revenue",
+      "label": "Monthly Revenue Bar Chart",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/04_monthly_revenue.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_tables_02_monthly_sales",
+      "label": "Monthly Sales Data Table",
+      "file_type": "table",
+      "source_file": "/home/joshua/Downloads/DWDM/output/tables/02_monthly_sales.csv",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_05_weekday_hour_heatmap",
+      "label": "Weekday-Hour Transaction Heatmap",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/05_weekday_hour_heatmap.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "transaction_counts",
+      "label": "Transaction Counts",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/05_weekday_hour_heatmap.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "weekday_pattern",
+      "label": "Weekday Pattern",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/05_weekday_hour_heatmap.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "hourly_pattern",
+      "label": "Hourly Pattern",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/05_weekday_hour_heatmap.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "order_timing",
+      "label": "Order Timing",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/05_weekday_hour_heatmap.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_06_top_countries",
+      "label": "Top 10 countries by revenue (bar chart)",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/06_top_countries.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_06_top_countries_uk",
+      "label": "United Kingdom",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/06_top_countries.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_06_top_countries_netherlands",
+      "label": "Netherlands",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/06_top_countries.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_06_top_countries_eire",
+      "label": "EIRE (Ireland)",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/06_top_countries.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_06_top_countries_germany",
+      "label": "Germany",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/06_top_countries.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_06_top_countries_france",
+      "label": "France",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/06_top_countries.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_06_top_countries_australia",
+      "label": "Australia",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/06_top_countries.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_06_top_countries_spain",
+      "label": "Spain",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/06_top_countries.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_06_top_countries_switzerland",
+      "label": "Switzerland",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/06_top_countries.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_06_top_countries_belgium",
+      "label": "Belgium",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/06_top_countries.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_06_top_countries_sweden",
+      "label": "Sweden",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/06_top_countries.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_07_item_frequency_relative_chart",
+      "label": "Top 20 Items by Support Chart",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/07_item_frequency_relative.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_07_item_frequency_relative_support_metric",
+      "label": "Support Metric",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/07_item_frequency_relative.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_07_item_frequency_relative_association_rule_mining",
+      "label": "Association Rule Mining",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/07_item_frequency_relative.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_07_item_frequency_relative_item_frequency",
+      "label": "Item Frequency Analysis",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/07_item_frequency_relative.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_08_threshold_sensitivity",
+      "label": "Threshold Sensitivity Chart",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "minimum_support",
+      "label": "Minimum Support",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "minimum_confidence",
+      "label": "Minimum Confidence",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "rule_count",
+      "label": "Number of Surviving Rules",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "min_support_0005",
+      "label": "Minimum Support 0.005",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "min_support_0075",
+      "label": "Minimum Support 0.0075",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "min_support_001",
+      "label": "Minimum Support 0.01",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "min_support_0015",
+      "label": "Minimum Support 0.015",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "min_support_002",
+      "label": "Minimum Support 0.02",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "min_confidence_02",
+      "label": "Minimum Confidence 0.2",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "min_confidence_03",
+      "label": "Minimum Confidence 0.3",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "min_confidence_04",
+      "label": "Minimum Confidence 0.4",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "min_confidence_05",
+      "label": "Minimum Confidence 0.5",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "min_confidence_06",
+      "label": "Minimum Confidence 0.6",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_09_rules_scatter",
+      "label": "Rule Landscape: Support vs Confidence",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/09_rules_scatter.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_10_rules_two_key_png",
+      "label": "Figure 10: Rules Two Key",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/10_rules_two_key.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_11_rules_graph_top25_lift_product_association_network",
+      "label": "Top 25 Rules by Lift -- Product Association Network",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_11_rules_graph_top25_lift_herb_marker_mint",
+      "label": "HERB MARKER MINT",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_11_rules_graph_top25_lift_herb_marker_thyme",
+      "label": "HERB MARKER THYME",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_11_rules_graph_top25_lift_herb_marker_rosemary",
+      "label": "HERB MARKER ROSEMARY",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_11_rules_graph_top25_lift_herb_marker_parsley",
+      "label": "HERB MARKER PARSLEY",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_11_rules_graph_top25_lift_herb_marker_chives",
+      "label": "HERB MARKER CHIVES",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_11_rules_graph_top25_lift_herb_marker_basil",
+      "label": "HERB MARKER BASIL",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_11_rules_graph_top25_lift_lift_metric",
+      "label": "Lift Metric (70.983 - 75.471)",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_11_rules_graph_top25_lift_support_metric",
+      "label": "Support Metric (0.01 - 0.012)",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_11_rules_graph_top25_lift_association_rules",
+      "label": "Association Rules (Top 25)",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_12_rules_grouped_matrix",
+      "label": "Rules Grouped Matrix (Figure 12)",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/12_rules_grouped_matrix.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_13_rules_paracoord_association_rules",
+      "label": "Association Rules",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_13_rules_paracoord_parallel_coordinates",
+      "label": "Parallel Coordinates Visualization",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_13_rules_paracoord_herb_marker_chives",
+      "label": "HERB MARKER CHIVES",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_13_rules_paracoord_herb_marker_mint",
+      "label": "HERB MARKER MINT",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_13_rules_paracoord_herb_marker_parsley",
+      "label": "HERB MARKER PARSLEY",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_13_rules_paracoord_herb_marker_rosemary",
+      "label": "HERB MARKER ROSEMARY",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_13_rules_paracoord_regency_tea_plate_green",
+      "label": "REGENCY TEA PLATE GREEN",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_13_rules_paracoord_herb_marker_thyme",
+      "label": "HERB MARKER THYME",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_13_rules_paracoord_regency_tea_plate_pink",
+      "label": "REGENCY TEA PLATE PINK",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_13_rules_paracoord_regency_tea_plate_roses",
+      "label": "REGENCY TEA PLATE ROSES",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_13_rules_paracoord_herb_marker_basil",
+      "label": "HERB MARKER BASIL",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_14_top_rules_by_lift_bars",
+      "label": "Top 20 Association Rules by Lift (Bar Chart)",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "herb_marker_mint",
+      "label": "HERB MARKER MINT",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "herb_marker_parsley",
+      "label": "HERB MARKER PARSLEY",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "herb_marker_chives",
+      "label": "HERB MARKER CHIVES",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "herb_marker_thyme",
+      "label": "HERB MARKER THYME",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "herb_marker_rosemary",
+      "label": "HERB MARKER ROSEMARY",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "herb_marker_basil",
+      "label": "HERB MARKER BASIL",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "output_figures_15_cross_sell_opportunity_value_chart",
+      "label": "Top 15 cross-sell opportunities by estimated revenue",
+      "file_type": "image",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "uci_online_retail_dataset",
+      "label": "UCI Online Retail dataset (cleaned transactions)",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "estimated_12_month_revenue",
+      "label": "Estimated 12-month revenue opportunity (GBP)",
+      "file_type": "metric",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "lift_metric",
+      "label": "Lift (association rule lift score)",
+      "file_type": "metric",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "roses_regency_teacup_and_saucer",
+      "label": "ROSES REGENCY TEACUP AND SAUCER",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "regency_cakestand_3_tier",
+      "label": "REGENCY CAKESTAND 3 TIER",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jumbo_bag_red_retrospot",
+      "label": "JUMBO BAG RED RETROSPOT",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jumbo_bag_pink_polkadot",
+      "label": "JUMBO BAG PINK POLKADOT",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "lunch_bag_red_retrospot",
+      "label": "LUNCH BAG RED RETROSPOT",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "spotty_bunting",
+      "label": "SPOTTY BUNTING",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "party_bunting",
+      "label": "PARTY BUNTING",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jumbo_storage_bag_suki",
+      "label": "JUMBO STORAGE BAG SUKI",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "natural_slate_heart_chalkboard",
+      "label": "NATURAL SLATE HEART CHALKBOARD",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "white_hanging_heart_t_light_holder",
+      "label": "WHITE HANGING HEART T-LIGHT HOLDER",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jumbo_shopper_vintage_red_paisley",
+      "label": "JUMBO SHOPPER VINTAGE RED PAISLEY",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "paper_chain_kit_50s_christmas",
+      "label": "PAPER CHAIN KIT 50'S CHRISTMAS",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "paper_chain_kit_vintage_christmas",
+      "label": "PAPER CHAIN KIT VINTAGE CHRISTMAS",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jam_making_set_printed",
+      "label": "JAM MAKING SET PRINTED",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jam_making_set_with_jars",
+      "label": "JAM MAKING SET WITH JARS",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jumbo_bag_vintage_doily",
+      "label": "JUMBO BAG VINTAGE DOILY",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jumbo_bag_apples",
+      "label": "JUMBO BAG APPLES",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jumbo_bag_baroque_black_white",
+      "label": "JUMBO BAG BAROQUE BLACK WHITE",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "heart_of_wicker_small",
+      "label": "HEART OF WICKER SMALL",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "heart_of_wicker_large",
+      "label": "HEART OF WICKER LARGE",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "lunch_bag_vintage_doily",
+      "label": "LUNCH BAG VINTAGE DOILY",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jumbo_bag_pink_vintage_paisley",
+      "label": "JUMBO BAG PINK VINTAGE PAISLEY",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jumbo_bag_strawberry",
+      "label": "JUMBO BAG STRAWBERRY",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_md",
+      "label": "Market Basket Analysis of Online Retail Transactions",
+      "file_type": "document",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "03_transactions_summary_txt",
+      "label": "Transactions Summary",
+      "file_type": "document",
+      "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mba_report_html",
+      "label": "MBA Report",
+      "file_type": "document",
+      "source_file": "/home/joshua/Downloads/DWDM/report/MBA_Report.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "uci_online_retail_dataset",
+      "label": "UCI Online Retail Dataset",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 3-4",
+      "source_url": "https://archive.ics.uci.edu/dataset/352/online+retail",
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "apriori_algorithm",
+      "label": "Apriori Algorithm",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 122",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "association_rule_mining",
+      "label": "Association Rule Mining",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "r_language",
+      "label": "R Programming Language",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 5",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "arules_package",
+      "label": "arules R Package",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 5",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "arulesviz_package",
+      "label": "arulesViz R Package",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 5",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "support_measure",
+      "label": "Support",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 136",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "confidence_measure",
+      "label": "Confidence",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 137",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "lift_measure",
+      "label": "Lift",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 138",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "fishers_exact_test",
+      "label": "Fisher's Exact Test",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 127",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "benjamini_hochberg_correction",
+      "label": "Benjamini-Hochberg Correction",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 128",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "item_matrix",
+      "label": "itemMatrix Sparse Format",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "white_hanging_heart_tlight_holder",
+      "label": "WHITE HANGING HEART T-LIGHT HOLDER",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+      "source_location": "line 6",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jumbo_bag_red_retrospot",
+      "label": "JUMBO BAG RED RETROSPOT",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+      "source_location": "line 6",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "regency_cakestand_3_tier",
+      "label": "REGENCY CAKESTAND 3 TIER",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+      "source_location": "line 8",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "party_bunting",
+      "label": "PARTY BUNTING",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+      "source_location": "line 8",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "lunch_bag_red_retrospot",
+      "label": "LUNCH BAG RED RETROSPOT",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+      "source_location": "line 10",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "dwrm_rproj",
+      "label": "DWDM.Rproj",
+      "file_type": "code",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 15",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "run_all_r",
+      "label": "run_all.R",
+      "file_type": "code",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 23",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "setup_r",
+      "label": "R/00_setup.R",
+      "file_type": "code",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 18",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mba_report_rmd",
+      "label": "report/MBA_Report.Rmd",
+      "file_type": "code",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 31",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "params_configuration",
+      "label": "PARAMS Configuration",
+      "file_type": "rationale",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 80",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "product_family_clustering",
+      "label": "Product Family Clustering",
+      "file_type": "rationale",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 148-152",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "colourway_substitution",
+      "label": "Colourway Substitution Pattern",
+      "file_type": "rationale",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 154-156",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "seasonal_association_structure",
+      "label": "Seasonal Association Structure",
+      "file_type": "rationale",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 158-160",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "segment_differences",
+      "label": "Segment Differences",
+      "file_type": "rationale",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 162-163",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "cross_sell_headroom",
+      "label": "Cross-Sell Revenue Headroom",
+      "file_type": "rationale",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 165-171",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "lift_as_primary_ranking",
+      "label": "Lift as Primary Ranking Measure",
+      "file_type": "rationale",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 140-143",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "boombox_ipod_classic",
+      "label": "BOOMBOX IPOD CLASSIC",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+      "source_location": "line 67",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "usb_office_mirror_ball",
+      "label": "USB OFFICE MIRROR BALL",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+      "source_location": "line 68",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "colour_spaceboy_pen",
+      "label": "10 COLOUR SPACEBOY PEN",
+      "file_type": "concept",
+      "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+      "source_location": "line 69",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agrawal_srikant_1994",
+      "label": "Agrawal & Srikant 1994 - Fast Algorithms for Mining Association Rules",
+      "file_type": "paper",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 226",
+      "source_url": null,
+      "captured_at": null,
+      "author": "Agrawal, R. & Srikant, R.",
+      "contributor": null
+    },
+    {
+      "id": "hahsler_gruen_hornik_2005",
+      "label": "Hahsler, Grün & Hornik 2005 - arules: A Computational Environment for Mining Association Rules",
+      "file_type": "paper",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 228-229",
+      "source_url": null,
+      "captured_at": null,
+      "author": "Hahsler, M., Grün, B. & Hornik, K.",
+      "contributor": null
+    },
+    {
+      "id": "chen_sain_guo_2012",
+      "label": "Chen, Sain & Guo 2012 - Data mining for the online retail industry",
+      "file_type": "paper",
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 231-232",
+      "source_url": null,
+      "captured_at": null,
+      "author": "Chen, D., Sain, S. L. & Guo, K.",
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "output_figures_01_top_items_frequency_chart",
+      "target": "uci_online_retail_dataset",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_01_top_items_frequency_chart",
+      "target": "basket_frequency_metric",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "basket_frequency_metric",
+      "target": "uci_online_retail_dataset",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_01_top_items_frequency_chart",
+      "target": "white_hanging_heart_t_light_holder",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_01_top_items_frequency_chart",
+      "target": "jumbo_bag_red_retrospot",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_01_top_items_frequency_chart",
+      "target": "regency_cakestand_3_tier",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_01_top_items_frequency_chart",
+      "target": "party_bunting",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_01_top_items_frequency_chart",
+      "target": "lunch_bag_red_retrospot",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_01_top_items_frequency_chart",
+      "target": "assorted_colour_bird_ornament",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_01_top_items_frequency_chart",
+      "target": "set_of_3_cake_tins_pantry_design",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_01_top_items_frequency_chart",
+      "target": "popcorn_holder",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_01_top_items_frequency_chart",
+      "target": "pack_of_72_retrospot_cake_cases",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_01_top_items_frequency_chart",
+      "target": "lunch_bag_suki_design",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_01_top_items_frequency_chart",
+      "target": "lunch_bag_black_skull",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_01_top_items_frequency_chart",
+      "target": "natural_slate_heart_chalkboard",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_01_top_items_frequency_chart",
+      "target": "jumbo_bag_vintage_doily",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_01_top_items_frequency_chart",
+      "target": "jumbo_bag_pink_polkadot",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_01_top_items_frequency_chart",
+      "target": "heart_of_wicker_small",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_01_top_items_frequency_chart",
+      "target": "jumbo_storage_bag_suki",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_01_top_items_frequency_chart",
+      "target": "jumbo_shopper_vintage_red_paisley",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_01_top_items_frequency_chart",
+      "target": "lunch_bag_spaceboy_design",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_01_top_items_frequency_chart",
+      "target": "paper_chain_kit_50s_christmas",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_01_top_items_frequency_chart",
+      "target": "jam_making_set_printed",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "jumbo_bag_red_retrospot",
+      "target": "lunch_bag_red_retrospot",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "jumbo_bag_red_retrospot",
+      "target": "jumbo_bag_vintage_doily",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "jumbo_bag_red_retrospot",
+      "target": "jumbo_bag_pink_polkadot",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "jumbo_bag_red_retrospot",
+      "target": "jumbo_storage_bag_suki",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "jumbo_bag_red_retrospot",
+      "target": "jumbo_shopper_vintage_red_paisley",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lunch_bag_red_retrospot",
+      "target": "lunch_bag_suki_design",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lunch_bag_red_retrospot",
+      "target": "lunch_bag_black_skull",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lunch_bag_red_retrospot",
+      "target": "lunch_bag_spaceboy_design",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "white_hanging_heart_t_light_holder",
+      "target": "natural_slate_heart_chalkboard",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "white_hanging_heart_t_light_holder",
+      "target": "heart_of_wicker_small",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "regency_cakestand_3_tier",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "white_hanging_heart_tlight_holder",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "party_bunting",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "jumbo_bag_red_retrospot",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "paper_chain_kit_50s_christmas",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "assorted_colour_bird_ornament",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "rabbit_night_light",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "chilli_lights",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "spotty_bunting",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "jumbo_bag_pink_polkadot",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "jumbo_bag_vintage_doily",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "popcorn_holder",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "set_of_3_cake_tins_pantry_design",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "jam_making_set_with_jars",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "black_record_cover_frame",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "wood_black_board_ant_white_finish",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "lunch_bag_red_retrospot",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "doormat_keep_calm_and_come_in",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "jumbo_bag_strawberry",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "paper_chain_kit_vintage_christmas",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "product_revenue_ranking",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "transaction_data",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_02_top_items_revenue",
+      "target": "ecommerce_sales_analysis",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "regency_cakestand_3_tier",
+      "target": "white_hanging_heart_tlight_holder",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "white_hanging_heart_tlight_holder",
+      "target": "party_bunting",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "party_bunting",
+      "target": "jumbo_bag_red_retrospot",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "jumbo_bag_red_retrospot",
+      "target": "paper_chain_kit_50s_christmas",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "paper_chain_kit_50s_christmas",
+      "target": "assorted_colour_bird_ornament",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "assorted_colour_bird_ornament",
+      "target": "rabbit_night_light",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "rabbit_night_light",
+      "target": "chilli_lights",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "chilli_lights",
+      "target": "spotty_bunting",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "spotty_bunting",
+      "target": "jumbo_bag_pink_polkadot",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "jumbo_bag_pink_polkadot",
+      "target": "jumbo_bag_vintage_doily",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "jumbo_bag_vintage_doily",
+      "target": "popcorn_holder",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "popcorn_holder",
+      "target": "set_of_3_cake_tins_pantry_design",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "set_of_3_cake_tins_pantry_design",
+      "target": "jam_making_set_with_jars",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "jam_making_set_with_jars",
+      "target": "black_record_cover_frame",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "black_record_cover_frame",
+      "target": "wood_black_board_ant_white_finish",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "wood_black_board_ant_white_finish",
+      "target": "lunch_bag_red_retrospot",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lunch_bag_red_retrospot",
+      "target": "doormat_keep_calm_and_come_in",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "doormat_keep_calm_and_come_in",
+      "target": "jumbo_bag_strawberry",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "jumbo_bag_strawberry",
+      "target": "paper_chain_kit_vintage_christmas",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "jumbo_bag_red_retrospot",
+      "target": "lunch_bag_red_retrospot",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "paper_chain_kit_50s_christmas",
+      "target": "paper_chain_kit_vintage_christmas",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "party_bunting",
+      "target": "spotty_bunting",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "jumbo_bag_red_retrospot",
+      "target": "jumbo_bag_pink_polkadot",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "jumbo_bag_red_retrospot",
+      "target": "jumbo_bag_vintage_doily",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "jumbo_bag_red_retrospot",
+      "target": "jumbo_bag_strawberry",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "product_revenue_ranking",
+      "target": "regency_cakestand_3_tier",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "ecommerce_sales_analysis",
+      "target": "transaction_data",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "party_bunting",
+      "target": "spotty_bunting",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_03_basket_size_distribution",
+      "target": "basket_size_distribution_concept",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/03_basket_size_distribution.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "basket_size_distribution_concept",
+      "target": "basket_size_mean_metric",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/03_basket_size_distribution.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "basket_size_distribution_concept",
+      "target": "basket_size_median_metric",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/03_basket_size_distribution.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "basket_size_distribution_concept",
+      "target": "distinct_products_per_basket",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/03_basket_size_distribution.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "basket_size_distribution_concept",
+      "target": "basket_size_right_skew",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/03_basket_size_distribution.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_04_monthly_revenue",
+      "target": "output_tables_02_monthly_sales",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/04_monthly_revenue.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_05_weekday_hour_heatmap",
+      "target": "transaction_counts",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/05_weekday_hour_heatmap.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_05_weekday_hour_heatmap",
+      "target": "weekday_pattern",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/05_weekday_hour_heatmap.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_05_weekday_hour_heatmap",
+      "target": "hourly_pattern",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/05_weekday_hour_heatmap.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_05_weekday_hour_heatmap",
+      "target": "order_timing",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/05_weekday_hour_heatmap.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_06_top_countries",
+      "target": "output_figures_06_top_countries_uk",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/06_top_countries.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_06_top_countries",
+      "target": "output_figures_06_top_countries_netherlands",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/06_top_countries.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_06_top_countries",
+      "target": "output_figures_06_top_countries_eire",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/06_top_countries.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_06_top_countries",
+      "target": "output_figures_06_top_countries_germany",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/06_top_countries.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_06_top_countries",
+      "target": "output_figures_06_top_countries_france",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/06_top_countries.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_06_top_countries",
+      "target": "output_figures_06_top_countries_australia",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/06_top_countries.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_06_top_countries",
+      "target": "output_figures_06_top_countries_spain",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/06_top_countries.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_06_top_countries",
+      "target": "output_figures_06_top_countries_switzerland",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/06_top_countries.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_06_top_countries",
+      "target": "output_figures_06_top_countries_belgium",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/06_top_countries.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_06_top_countries",
+      "target": "output_figures_06_top_countries_sweden",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/06_top_countries.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_07_item_frequency_relative_chart",
+      "target": "output_figures_07_item_frequency_relative_support_metric",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/07_item_frequency_relative.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_07_item_frequency_relative_support_metric",
+      "target": "output_figures_07_item_frequency_relative_association_rule_mining",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/07_item_frequency_relative.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_07_item_frequency_relative_chart",
+      "target": "output_figures_07_item_frequency_relative_item_frequency",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/07_item_frequency_relative.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_08_threshold_sensitivity",
+      "target": "minimum_support",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_08_threshold_sensitivity",
+      "target": "minimum_confidence",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_08_threshold_sensitivity",
+      "target": "rule_count",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "minimum_support",
+      "target": "min_support_0005",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "minimum_support",
+      "target": "min_support_0075",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "minimum_support",
+      "target": "min_support_001",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "minimum_support",
+      "target": "min_support_0015",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "minimum_support",
+      "target": "min_support_002",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "minimum_confidence",
+      "target": "min_confidence_02",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "minimum_confidence",
+      "target": "min_confidence_03",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "minimum_confidence",
+      "target": "min_confidence_04",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "minimum_confidence",
+      "target": "min_confidence_05",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "minimum_confidence",
+      "target": "min_confidence_06",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_09_rules_scatter",
+      "target": "association_rules",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/09_rules_scatter.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_09_rules_scatter",
+      "target": "lift",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/09_rules_scatter.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_09_rules_scatter",
+      "target": "support",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/09_rules_scatter.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_09_rules_scatter",
+      "target": "confidence_metric",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/09_rules_scatter.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_09_rules_scatter",
+      "target": "data_mining",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/09_rules_scatter.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_11_rules_graph_top25_lift_herb_marker_mint",
+      "target": "output_figures_11_rules_graph_top25_lift_herb_marker_thyme",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_11_rules_graph_top25_lift_herb_marker_rosemary",
+      "target": "output_figures_11_rules_graph_top25_lift_herb_marker_thyme",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_11_rules_graph_top25_lift_herb_marker_parsley",
+      "target": "output_figures_11_rules_graph_top25_lift_herb_marker_mint",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_11_rules_graph_top25_lift_herb_marker_parsley",
+      "target": "output_figures_11_rules_graph_top25_lift_herb_marker_thyme",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_11_rules_graph_top25_lift_herb_marker_chives",
+      "target": "output_figures_11_rules_graph_top25_lift_herb_marker_parsley",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_11_rules_graph_top25_lift_herb_marker_chives",
+      "target": "output_figures_11_rules_graph_top25_lift_herb_marker_mint",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_11_rules_graph_top25_lift_herb_marker_basil",
+      "target": "output_figures_11_rules_graph_top25_lift_herb_marker_thyme",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_11_rules_graph_top25_lift_product_association_network",
+      "target": "output_figures_11_rules_graph_top25_lift_herb_marker_mint",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_11_rules_graph_top25_lift_product_association_network",
+      "target": "output_figures_11_rules_graph_top25_lift_herb_marker_thyme",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_11_rules_graph_top25_lift_product_association_network",
+      "target": "output_figures_11_rules_graph_top25_lift_herb_marker_rosemary",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_11_rules_graph_top25_lift_product_association_network",
+      "target": "output_figures_11_rules_graph_top25_lift_herb_marker_parsley",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_11_rules_graph_top25_lift_product_association_network",
+      "target": "output_figures_11_rules_graph_top25_lift_herb_marker_chives",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_11_rules_graph_top25_lift_product_association_network",
+      "target": "output_figures_11_rules_graph_top25_lift_herb_marker_basil",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_11_rules_graph_top25_lift_association_rules",
+      "target": "output_figures_11_rules_graph_top25_lift_product_association_network",
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_11_rules_graph_top25_lift_lift_metric",
+      "target": "output_figures_11_rules_graph_top25_lift_association_rules",
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_11_rules_graph_top25_lift_support_metric",
+      "target": "output_figures_11_rules_graph_top25_lift_association_rules",
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_11_rules_graph_top25_lift_lift_metric",
+      "target": "output_figures_11_rules_graph_top25_lift_product_association_network",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_11_rules_graph_top25_lift_support_metric",
+      "target": "output_figures_11_rules_graph_top25_lift_product_association_network",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_13_rules_paracoord_parallel_coordinates",
+      "target": "output_figures_13_rules_paracoord_association_rules",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_13_rules_paracoord_herb_marker_rosemary",
+      "target": "output_figures_13_rules_paracoord_association_rules",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_13_rules_paracoord_herb_marker_basil",
+      "target": "output_figures_13_rules_paracoord_association_rules",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_13_rules_paracoord_herb_marker_chives",
+      "target": "output_figures_13_rules_paracoord_association_rules",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_13_rules_paracoord_herb_marker_mint",
+      "target": "output_figures_13_rules_paracoord_association_rules",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_13_rules_paracoord_herb_marker_parsley",
+      "target": "output_figures_13_rules_paracoord_association_rules",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_13_rules_paracoord_regency_tea_plate_green",
+      "target": "output_figures_13_rules_paracoord_association_rules",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_13_rules_paracoord_herb_marker_thyme",
+      "target": "output_figures_13_rules_paracoord_association_rules",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_13_rules_paracoord_regency_tea_plate_pink",
+      "target": "output_figures_13_rules_paracoord_association_rules",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_13_rules_paracoord_regency_tea_plate_roses",
+      "target": "output_figures_13_rules_paracoord_association_rules",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_13_rules_paracoord_herb_marker_chives",
+      "target": "output_figures_13_rules_paracoord_herb_marker_mint",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_13_rules_paracoord_herb_marker_mint",
+      "target": "output_figures_13_rules_paracoord_herb_marker_rosemary",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_13_rules_paracoord_herb_marker_thyme",
+      "target": "output_figures_13_rules_paracoord_herb_marker_rosemary",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_13_rules_paracoord_regency_tea_plate_green",
+      "target": "output_figures_13_rules_paracoord_herb_marker_rosemary",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_13_rules_paracoord_herb_marker_parsley",
+      "target": "output_figures_13_rules_paracoord_herb_marker_rosemary",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_13_rules_paracoord_herb_marker_rosemary",
+      "target": "output_figures_13_rules_paracoord_herb_marker_basil",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_13_rules_paracoord_regency_tea_plate_roses",
+      "target": "output_figures_13_rules_paracoord_herb_marker_rosemary",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "herb_marker_mint",
+      "target": "herb_marker_parsley",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "herb_marker_mint",
+      "target": "herb_marker_chives",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "herb_marker_parsley",
+      "target": "herb_marker_chives",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "herb_marker_parsley",
+      "target": "herb_marker_thyme",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "herb_marker_parsley",
+      "target": "herb_marker_rosemary",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "herb_marker_chives",
+      "target": "herb_marker_thyme",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "herb_marker_chives",
+      "target": "herb_marker_mint",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "herb_marker_chives",
+      "target": "herb_marker_rosemary",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "herb_marker_chives",
+      "target": "herb_marker_parsley",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "herb_marker_basil",
+      "target": "herb_marker_parsley",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "herb_marker_basil",
+      "target": "herb_marker_rosemary",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "herb_marker_basil",
+      "target": "herb_marker_thyme",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "herb_marker_basil",
+      "target": "herb_marker_mint",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "herb_marker_mint",
+      "target": "herb_marker_rosemary",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "herb_marker_rosemary",
+      "target": "herb_marker_thyme",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "herb_marker_rosemary",
+      "target": "herb_marker_parsley",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_14_top_rules_by_lift_bars",
+      "target": "herb_marker_mint",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_14_top_rules_by_lift_bars",
+      "target": "herb_marker_parsley",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_14_top_rules_by_lift_bars",
+      "target": "herb_marker_chives",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_14_top_rules_by_lift_bars",
+      "target": "herb_marker_thyme",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_14_top_rules_by_lift_bars",
+      "target": "herb_marker_rosemary",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_14_top_rules_by_lift_bars",
+      "target": "herb_marker_basil",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_15_cross_sell_opportunity_value_chart",
+      "target": "uci_online_retail_dataset",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_15_cross_sell_opportunity_value_chart",
+      "target": "estimated_12_month_revenue",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "output_figures_15_cross_sell_opportunity_value_chart",
+      "target": "lift_metric",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "roses_regency_teacup_and_saucer",
+      "target": "regency_cakestand_3_tier",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "jumbo_bag_red_retrospot",
+      "target": "jumbo_bag_pink_polkadot",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lunch_bag_red_retrospot",
+      "target": "jumbo_bag_red_retrospot",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "spotty_bunting",
+      "target": "party_bunting",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "jumbo_bag_red_retrospot",
+      "target": "jumbo_storage_bag_suki",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "natural_slate_heart_chalkboard",
+      "target": "white_hanging_heart_t_light_holder",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "jumbo_bag_red_retrospot",
+      "target": "jumbo_shopper_vintage_red_paisley",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "paper_chain_kit_50s_christmas",
+      "target": "paper_chain_kit_vintage_christmas",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "jam_making_set_printed",
+      "target": "jam_making_set_with_jars",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "jumbo_bag_vintage_doily",
+      "target": "jumbo_bag_apples",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "jumbo_bag_pink_polkadot",
+      "target": "jumbo_bag_baroque_black_white",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "heart_of_wicker_small",
+      "target": "heart_of_wicker_large",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lunch_bag_vintage_doily",
+      "target": "jumbo_bag_vintage_doily",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "jumbo_bag_pink_vintage_paisley",
+      "target": "jumbo_bag_strawberry",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "uci_online_retail_dataset",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 3-4",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "apriori_algorithm",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 122",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "association_rule_mining",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 3",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "r_language",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 5",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "arules_package",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 5",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "arulesviz_package",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 5",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "support_measure",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 136",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "confidence_measure",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 137",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "lift_measure",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 138",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "fishers_exact_test",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 127",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "benjamini_hochberg_correction",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 128",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "params_configuration",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 80-90",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "product_family_clustering",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 148-152",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "colourway_substitution",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 154-156",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "seasonal_association_structure",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 158-160",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "segment_differences",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 162-163",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "cross_sell_headroom",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 165-171",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "lift_as_primary_ranking",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 140-143",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "dwrm_rproj",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 15",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "run_all_r",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 23",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "setup_r",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 18",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "mba_report_rmd",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 31",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "agrawal_srikant_1994",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 226",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "hahsler_gruen_hornik_2005",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 228-229",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "chen_sain_guo_2012",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 231-232",
+      "weight": 1.0
+    },
+    {
+      "source": "03_transactions_summary_txt",
+      "target": "item_matrix",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+      "source_location": "line 1",
+      "weight": 1.0
+    },
+    {
+      "source": "03_transactions_summary_txt",
+      "target": "white_hanging_heart_tlight_holder",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+      "source_location": "line 6-7",
+      "weight": 1.0
+    },
+    {
+      "source": "03_transactions_summary_txt",
+      "target": "jumbo_bag_red_retrospot",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+      "source_location": "line 6-7",
+      "weight": 1.0
+    },
+    {
+      "source": "03_transactions_summary_txt",
+      "target": "regency_cakestand_3_tier",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+      "source_location": "line 8-9",
+      "weight": 1.0
+    },
+    {
+      "source": "03_transactions_summary_txt",
+      "target": "party_bunting",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+      "source_location": "line 8-9",
+      "weight": 1.0
+    },
+    {
+      "source": "03_transactions_summary_txt",
+      "target": "lunch_bag_red_retrospot",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+      "source_location": "line 10-11",
+      "weight": 1.0
+    },
+    {
+      "source": "03_transactions_summary_txt",
+      "target": "boombox_ipod_classic",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+      "source_location": "line 67",
+      "weight": 1.0
+    },
+    {
+      "source": "03_transactions_summary_txt",
+      "target": "usb_office_mirror_ball",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+      "source_location": "line 68",
+      "weight": 1.0
+    },
+    {
+      "source": "03_transactions_summary_txt",
+      "target": "colour_spaceboy_pen",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+      "source_location": "line 69",
+      "weight": 1.0
+    },
+    {
+      "source": "apriori_algorithm",
+      "target": "support_measure",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "apriori_algorithm",
+      "target": "confidence_measure",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "apriori_algorithm",
+      "target": "lift_measure",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "uci_online_retail_dataset",
+      "target": "item_matrix",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "/home/joshua/Downloads/DWDM/output/tables/03_transactions_summary.txt",
+      "source_location": "line 1",
+      "weight": 1.0
+    },
+    {
+      "source": "uci_online_retail_dataset",
+      "target": "03_transactions_summary_txt",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "03_transactions_summary_txt",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 1-3",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_md",
+      "target": "mba_report_html",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 31",
+      "weight": 1.0
+    },
+    {
+      "source": "mba_report_rmd",
+      "target": "mba_report_html",
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 31-38",
+      "weight": 1.0
+    },
+    {
+      "source": "arules_package",
+      "target": "apriori_algorithm",
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "arulesviz_package",
+      "target": "association_rule_mining",
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "apriori_algorithm",
+      "target": "params_configuration",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 83-90",
+      "weight": 1.0
+    },
+    {
+      "source": "benjamini_hochberg_correction",
+      "target": "fishers_exact_test",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 127-128",
+      "weight": 1.0
+    },
+    {
+      "source": "lift_measure",
+      "target": "support_measure",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 136-138",
+      "weight": 1.0
+    },
+    {
+      "source": "lift_measure",
+      "target": "confidence_measure",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 136-138",
+      "weight": 1.0
+    },
+    {
+      "source": "cross_sell_headroom",
+      "target": "lift_measure",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 165-171",
+      "weight": 1.0
+    },
+    {
+      "source": "cross_sell_headroom",
+      "target": "support_measure",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md",
+      "source_location": "line 165-171",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "top_20_products_ranking",
+      "label": "Top 20 most frequently purchased products (UCI Online Retail)",
+      "nodes": [
+        "white_hanging_heart_t_light_holder",
+        "jumbo_bag_red_retrospot",
+        "regency_cakestand_3_tier",
+        "party_bunting",
+        "lunch_bag_red_retrospot",
+        "assorted_colour_bird_ornament",
+        "set_of_3_cake_tins_pantry_design",
+        "popcorn_holder",
+        "pack_of_72_retrospot_cake_cases",
+        "lunch_bag_suki_design",
+        "lunch_bag_black_skull",
+        "natural_slate_heart_chalkboard",
+        "jumbo_bag_vintage_doily",
+        "jumbo_bag_pink_polkadot",
+        "heart_of_wicker_small",
+        "jumbo_storage_bag_suki",
+        "jumbo_shopper_vintage_red_paisley",
+        "lunch_bag_spaceboy_design",
+        "paper_chain_kit_50s_christmas",
+        "jam_making_set_printed"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/01_top_items_frequency.png"
+    },
+    {
+      "id": "jumbo_bag_product_family",
+      "label": "Jumbo Bag Product Family",
+      "nodes": [
+        "jumbo_bag_red_retrospot",
+        "jumbo_bag_pink_polkadot",
+        "jumbo_bag_vintage_doily",
+        "jumbo_bag_strawberry"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png"
+    },
+    {
+      "id": "christmas_decor_products",
+      "label": "Christmas Decor Products",
+      "nodes": [
+        "paper_chain_kit_50s_christmas",
+        "paper_chain_kit_vintage_christmas",
+        "party_bunting",
+        "spotty_bunting"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png"
+    },
+    {
+      "id": "mid_tier_revenue_cluster",
+      "label": "Mid-Tier Revenue Cluster",
+      "nodes": [
+        "rabbit_night_light",
+        "chilli_lights",
+        "spotty_bunting",
+        "jumbo_bag_pink_polkadot",
+        "jumbo_bag_vintage_doily",
+        "popcorn_holder",
+        "set_of_3_cake_tins_pantry_design",
+        "jam_making_set_with_jars",
+        "black_record_cover_frame",
+        "wood_black_board_ant_white_finish",
+        "lunch_bag_red_retrospot",
+        "doormat_keep_calm_and_come_in",
+        "jumbo_bag_strawberry",
+        "paper_chain_kit_vintage_christmas"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/02_top_items_revenue.png"
+    },
+    {
+      "id": "basket_size_analysis_group",
+      "label": "Basket Size Statistical Summary",
+      "nodes": [
+        "basket_size_distribution_concept",
+        "basket_size_mean_metric",
+        "basket_size_median_metric",
+        "basket_size_right_skew"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/03_basket_size_distribution.png"
+    },
+    {
+      "id": "output_figures_06_top_countries_hyper",
+      "label": "Top 10 countries by revenue ranking",
+      "nodes": [
+        "output_figures_06_top_countries_uk",
+        "output_figures_06_top_countries_netherlands",
+        "output_figures_06_top_countries_eire",
+        "output_figures_06_top_countries_germany",
+        "output_figures_06_top_countries_france",
+        "output_figures_06_top_countries_australia",
+        "output_figures_06_top_countries_spain",
+        "output_figures_06_top_countries_switzerland",
+        "output_figures_06_top_countries_belgium",
+        "output_figures_06_top_countries_sweden"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/06_top_countries.png"
+    },
+    {
+      "id": "output_figures_07_item_frequency_relative_hyper_1",
+      "label": "Support-based item ranking in association rule mining",
+      "nodes": [
+        "output_figures_07_item_frequency_relative_chart",
+        "output_figures_07_item_frequency_relative_support_metric",
+        "output_figures_07_item_frequency_relative_association_rule_mining",
+        "output_figures_07_item_frequency_relative_item_frequency"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/07_item_frequency_relative.png"
+    },
+    {
+      "id": "threshold_pair_0005",
+      "label": "Threshold Pair: min support 0.005",
+      "nodes": [
+        "min_support_0005",
+        "min_confidence_02",
+        "min_confidence_03",
+        "min_confidence_04",
+        "min_confidence_05",
+        "min_confidence_06",
+        "rule_count"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png"
+    },
+    {
+      "id": "threshold_pair_0075",
+      "label": "Threshold Pair: min support 0.0075",
+      "nodes": [
+        "min_support_0075",
+        "min_confidence_02",
+        "min_confidence_03",
+        "min_confidence_04",
+        "min_confidence_05",
+        "min_confidence_06",
+        "rule_count"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png"
+    },
+    {
+      "id": "threshold_pair_001",
+      "label": "Threshold Pair: min support 0.01",
+      "nodes": [
+        "min_support_001",
+        "min_confidence_02",
+        "min_confidence_03",
+        "min_confidence_04",
+        "min_confidence_05",
+        "min_confidence_06",
+        "rule_count"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png"
+    },
+    {
+      "id": "threshold_pair_0015",
+      "label": "Threshold Pair: min support 0.015",
+      "nodes": [
+        "min_support_0015",
+        "min_confidence_02",
+        "min_confidence_03",
+        "min_confidence_04",
+        "min_confidence_05",
+        "min_confidence_06",
+        "rule_count"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png"
+    },
+    {
+      "id": "threshold_pair_002",
+      "label": "Threshold Pair: min support 0.02",
+      "nodes": [
+        "min_support_002",
+        "min_confidence_02",
+        "min_confidence_03",
+        "min_confidence_04",
+        "min_confidence_05",
+        "min_confidence_06",
+        "rule_count"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/08_threshold_sensitivity.png"
+    },
+    {
+      "id": "hyper_09_rules_scatter",
+      "label": "Rule Evaluation Metrics Cluster",
+      "nodes": [
+        "output_figures_09_rules_scatter",
+        "association_rules",
+        "lift",
+        "support",
+        "confidence_metric"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/09_rules_scatter.png"
+    },
+    {
+      "id": "output_figures_11_rules_graph_top25_lift_hyperedge_herb_markers",
+      "label": "Herb Marker Product Association Set",
+      "nodes": [
+        "output_figures_11_rules_graph_top25_lift_herb_marker_mint",
+        "output_figures_11_rules_graph_top25_lift_herb_marker_thyme",
+        "output_figures_11_rules_graph_top25_lift_herb_marker_rosemary",
+        "output_figures_11_rules_graph_top25_lift_herb_marker_parsley",
+        "output_figures_11_rules_graph_top25_lift_herb_marker_chives",
+        "output_figures_11_rules_graph_top25_lift_herb_marker_basil"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png"
+    },
+    {
+      "id": "output_figures_13_rules_paracoord_herb_product_cluster",
+      "label": "Herb Marker Product Cluster",
+      "nodes": [
+        "output_figures_13_rules_paracoord_herb_marker_chives",
+        "output_figures_13_rules_paracoord_herb_marker_mint",
+        "output_figures_13_rules_paracoord_herb_marker_parsley",
+        "output_figures_13_rules_paracoord_herb_marker_rosemary",
+        "output_figures_13_rules_paracoord_herb_marker_thyme",
+        "output_figures_13_rules_paracoord_herb_marker_basil"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/13_rules_paracoord.png"
+    },
+    {
+      "id": "rule_mint_parsley_chives",
+      "label": "HERB MARKER MINT + HERB MARKER PARSLEY => HERB MARKER CHIVES (highest lift ~68)",
+      "nodes": [
+        "herb_marker_mint",
+        "herb_marker_parsley",
+        "herb_marker_chives"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png"
+    },
+    {
+      "id": "rule_parsley_thyme_chives",
+      "label": "HERB MARKER PARSLEY + HERB MARKER THYME => HERB MARKER CHIVES (lift ~66)",
+      "nodes": [
+        "herb_marker_parsley",
+        "herb_marker_thyme",
+        "herb_marker_chives"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png"
+    },
+    {
+      "id": "rule_parsley_rosemary_chives",
+      "label": "HERB MARKER PARSLEY + HERB MARKER ROSEMARY => HERB MARKER CHIVES (lift ~66)",
+      "nodes": [
+        "herb_marker_parsley",
+        "herb_marker_rosemary",
+        "herb_marker_chives"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png"
+    },
+    {
+      "id": "rule_chives_thyme_parsley",
+      "label": "HERB MARKER CHIVES + HERB MARKER THYME => HERB MARKER PARSLEY (lift ~58)",
+      "nodes": [
+        "herb_marker_chives",
+        "herb_marker_thyme",
+        "herb_marker_parsley"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png"
+    },
+    {
+      "id": "rule_chives_rosemary_parsley",
+      "label": "HERB MARKER CHIVES + HERB MARKER ROSEMARY => HERB MARKER PARSLEY (lift ~57)",
+      "nodes": [
+        "herb_marker_chives",
+        "herb_marker_rosemary",
+        "herb_marker_parsley"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png"
+    },
+    {
+      "id": "rule_basil_parsley_rosemary_chives",
+      "label": "HERB MARKER BASIL + HERB MARKER PARSLEY + HERB MARKER ROSEMARY => HERB MARKER CHIVES (lift ~56)",
+      "nodes": [
+        "herb_marker_basil",
+        "herb_marker_parsley",
+        "herb_marker_rosemary",
+        "herb_marker_chives"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png"
+    },
+    {
+      "id": "rule_chives_mint_parsley",
+      "label": "HERB MARKER CHIVES + HERB MARKER MINT => HERB MARKER PARSLEY (lift ~56)",
+      "nodes": [
+        "herb_marker_chives",
+        "herb_marker_mint",
+        "herb_marker_parsley"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png"
+    },
+    {
+      "id": "rule_mint_parsley_rosemary_herb",
+      "label": "HERB MARKER MINT + HERB MARKER PARSLEY + HERB MARKER ROSEMARY => HERB (lift ~56, truncated label)",
+      "nodes": [
+        "herb_marker_mint",
+        "herb_marker_parsley",
+        "herb_marker_rosemary"
+      ],
+      "relation": "implement",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.25,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png"
+    },
+    {
+      "id": "rule_chives_parsley_thyme",
+      "label": "HERB MARKER CHIVES + HERB MARKER PARSLEY => HERB MARKER THYME (lift ~56)",
+      "nodes": [
+        "herb_marker_chives",
+        "herb_marker_parsley",
+        "herb_marker_thyme"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png"
+    },
+    {
+      "id": "rule_basil_parsley_thyme_herb",
+      "label": "HERB MARKER BASIL + HERB MARKER PARSLEY + HERB MARKER THYME => HERB (lift ~56, truncated label)",
+      "nodes": [
+        "herb_marker_basil",
+        "herb_marker_parsley",
+        "herb_marker_thyme"
+      ],
+      "relation": "implement",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.25,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png"
+    },
+    {
+      "id": "rule_parsley_rosemary_thyme",
+      "label": "HERB MARKER PARSLEY + HERB MARKER ROSEMARY => HERB MARKER THYME (lift ~56)",
+      "nodes": [
+        "herb_marker_parsley",
+        "herb_marker_rosemary",
+        "herb_marker_thyme"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png"
+    },
+    {
+      "id": "rule_mint_thyme_rosemary",
+      "label": "HERB MARKER MINT + HERB MARKER THYME => HERB MARKER ROSEMARY (lift ~56)",
+      "nodes": [
+        "herb_marker_mint",
+        "herb_marker_thyme",
+        "herb_marker_rosemary"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png"
+    },
+    {
+      "id": "rule_parsley_thyme_rosemary",
+      "label": "HERB MARKER PARSLEY + HERB MARKER THYME => HERB MARKER ROSEMARY (lift ~56)",
+      "nodes": [
+        "herb_marker_parsley",
+        "herb_marker_thyme",
+        "herb_marker_rosemary"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png"
+    },
+    {
+      "id": "rule_basil_thyme_rosemary",
+      "label": "HERB MARKER BASIL + HERB MARKER THYME => HERB MARKER ROSEMARY (lift ~56)",
+      "nodes": [
+        "herb_marker_basil",
+        "herb_marker_thyme",
+        "herb_marker_rosemary"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png"
+    },
+    {
+      "id": "rule_mint_rosemary_thyme_herb",
+      "label": "HERB MARKER MINT + HERB MARKER ROSEMARY + HERB MARKER THYME => HERB (lift ~56, truncated label)",
+      "nodes": [
+        "herb_marker_mint",
+        "herb_marker_rosemary",
+        "herb_marker_thyme"
+      ],
+      "relation": "implement",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.25,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png"
+    },
+    {
+      "id": "rule_basil_rosemary_thyme",
+      "label": "HERB MARKER BASIL + HERB MARKER ROSEMARY => HERB MARKER THYME (lift ~55)",
+      "nodes": [
+        "herb_marker_basil",
+        "herb_marker_rosemary",
+        "herb_marker_thyme"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png"
+    },
+    {
+      "id": "rule_mint_thyme_parsley",
+      "label": "HERB MARKER MINT + HERB MARKER THYME => HERB MARKER PARSLEY (lift ~55)",
+      "nodes": [
+        "herb_marker_mint",
+        "herb_marker_thyme",
+        "herb_marker_parsley"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png"
+    },
+    {
+      "id": "rule_chives_parsley_rosemary",
+      "label": "HERB MARKER CHIVES + HERB MARKER PARSLEY => HERB MARKER ROSEMARY (lift ~54)",
+      "nodes": [
+        "herb_marker_chives",
+        "herb_marker_parsley",
+        "herb_marker_rosemary"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png"
+    },
+    {
+      "id": "rule_chives_parsley_mint",
+      "label": "HERB MARKER CHIVES + HERB MARKER PARSLEY => HERB MARKER MINT (lift ~54)",
+      "nodes": [
+        "herb_marker_chives",
+        "herb_marker_parsley",
+        "herb_marker_mint"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/14_top_rules_by_lift_bars.png"
+    },
+    {
+      "id": "top_15_cross_sell_opportunities",
+      "label": "Top 15 cross-sell opportunities by estimated 12-month revenue (UCI Online Retail)",
+      "nodes": [
+        "roses_regency_teacup_and_saucer",
+        "regency_cakestand_3_tier",
+        "jumbo_bag_red_retrospot",
+        "jumbo_bag_pink_polkadot",
+        "lunch_bag_red_retrospot",
+        "spotty_bunting",
+        "party_bunting",
+        "jumbo_storage_bag_suki",
+        "natural_slate_heart_chalkboard",
+        "white_hanging_heart_t_light_holder",
+        "jumbo_shopper_vintage_red_paisley",
+        "paper_chain_kit_50s_christmas",
+        "paper_chain_kit_vintage_christmas",
+        "jam_making_set_printed",
+        "jam_making_set_with_jars",
+        "jumbo_bag_vintage_doily",
+        "jumbo_bag_apples",
+        "jumbo_bag_baroque_black_white",
+        "heart_of_wicker_small",
+        "heart_of_wicker_large",
+        "lunch_bag_vintage_doily",
+        "jumbo_bag_pink_vintage_paisley",
+        "jumbo_bag_strawberry"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/output/figures/15_cross_sell_opportunity_value.png"
+    },
+    {
+      "id": "hyper_apriori_pipeline",
+      "label": "Apriori Pipeline Parameters",
+      "nodes": [
+        "support_measure",
+        "confidence_measure",
+        "lift_measure",
+        "fishers_exact_test",
+        "benjamini_hochberg_correction",
+        "params_configuration"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md"
+    },
+    {
+      "id": "hyper_project_structure",
+      "label": "Project Scripts",
+      "nodes": [
+        "setup_r",
+        "run_all_r",
+        "dwrm_rproj",
+        "mba_report_rmd",
+        "mba_report_html"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md"
+    },
+    {
+      "id": "hyper_findings",
+      "label": "Key Findings",
+      "nodes": [
+        "product_family_clustering",
+        "colourway_substitution",
+        "seasonal_association_structure",
+        "segment_differences",
+        "cross_sell_headroom",
+        "lift_as_primary_ranking"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/joshua/Downloads/DWDM/README.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

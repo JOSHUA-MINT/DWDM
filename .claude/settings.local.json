@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/home/joshua/.local/share/uv/tools/graphifyy/bin/python -c ' *)"
+    ]
+  }
+}

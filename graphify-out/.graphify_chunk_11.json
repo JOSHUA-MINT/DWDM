@@ -1,0 +1,316 @@
+{
+ "nodes": [
+ {
+ "id": "output_figures_11_rules_graph_top25_lift_product_association_network",
+ "label": "Top 25 Rules by Lift -- Product Association Network",
+ "file_type": "image",
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "output_figures_11_rules_graph_top25_lift_herb_marker_mint",
+ "label": "HERB MARKER MINT",
+ "file_type": "image",
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "output_figures_11_rules_graph_top25_lift_herb_marker_thyme",
+ "label": "HERB MARKER THYME",
+ "file_type": "image",
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "output_figures_11_rules_graph_top25_lift_herb_marker_rosemary",
+ "label": "HERB MARKER ROSEMARY",
+ "file_type": "image",
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "output_figures_11_rules_graph_top25_lift_herb_marker_parsley",
+ "label": "HERB MARKER PARSLEY",
+ "file_type": "image",
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "output_figures_11_rules_graph_top25_lift_herb_marker_chives",
+ "label": "HERB MARKER CHIVES",
+ "file_type": "image",
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "output_figures_11_rules_graph_top25_lift_herb_marker_basil",
+ "label": "HERB MARKER BASIL",
+ "file_type": "image",
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "output_figures_11_rules_graph_top25_lift_lift_metric",
+ "label": "Lift Metric (70.983 - 75.471)",
+ "file_type": "image",
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "output_figures_11_rules_graph_top25_lift_support_metric",
+ "label": "Support Metric (0.01 - 0.012)",
+ "file_type": "image",
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ },
+ {
+ "id": "output_figures_11_rules_graph_top25_lift_association_rules",
+ "label": "Association Rules (Top 25)",
+ "file_type": "image",
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "source_url": null,
+ "captured_at": null,
+ "author": null,
+ "contributor": null
+ }
+ ],
+ "edges": [
+ {
+ "source": "output_figures_11_rules_graph_top25_lift_herb_marker_mint",
+ "target": "output_figures_11_rules_graph_top25_lift_herb_marker_thyme",
+ "relation": "conceptually_related_to",
+ "confidence": "INFERRED",
+ "confidence_score": 0.85,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "output_figures_11_rules_graph_top25_lift_herb_marker_rosemary",
+ "target": "output_figures_11_rules_graph_top25_lift_herb_marker_thyme",
+ "relation": "conceptually_related_to",
+ "confidence": "INFERRED",
+ "confidence_score": 0.85,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "output_figures_11_rules_graph_top25_lift_herb_marker_parsley",
+ "target": "output_figures_11_rules_graph_top25_lift_herb_marker_mint",
+ "relation": "conceptually_related_to",
+ "confidence": "INFERRED",
+ "confidence_score": 0.85,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "output_figures_11_rules_graph_top25_lift_herb_marker_parsley",
+ "target": "output_figures_11_rules_graph_top25_lift_herb_marker_thyme",
+ "relation": "conceptually_related_to",
+ "confidence": "INFERRED",
+ "confidence_score": 0.85,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "output_figures_11_rules_graph_top25_lift_herb_marker_chives",
+ "target": "output_figures_11_rules_graph_top25_lift_herb_marker_parsley",
+ "relation": "conceptually_related_to",
+ "confidence": "INFERRED",
+ "confidence_score": 0.85,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "output_figures_11_rules_graph_top25_lift_herb_marker_chives",
+ "target": "output_figures_11_rules_graph_top25_lift_herb_marker_mint",
+ "relation": "conceptually_related_to",
+ "confidence": "INFERRED",
+ "confidence_score": 0.85,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "output_figures_11_rules_graph_top25_lift_herb_marker_basil",
+ "target": "output_figures_11_rules_graph_top25_lift_herb_marker_thyme",
+ "relation": "conceptually_related_to",
+ "confidence": "INFERRED",
+ "confidence_score": 0.85,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "output_figures_11_rules_graph_top25_lift_product_association_network",
+ "target": "output_figures_11_rules_graph_top25_lift_herb_marker_mint",
+ "relation": "references",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "output_figures_11_rules_graph_top25_lift_product_association_network",
+ "target": "output_figures_11_rules_graph_top25_lift_herb_marker_thyme",
+ "relation": "references",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "output_figures_11_rules_graph_top25_lift_product_association_network",
+ "target": "output_figures_11_rules_graph_top25_lift_herb_marker_rosemary",
+ "relation": "references",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "output_figures_11_rules_graph_top25_lift_product_association_network",
+ "target": "output_figures_11_rules_graph_top25_lift_herb_marker_parsley",
+ "relation": "references",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "output_figures_11_rules_graph_top25_lift_product_association_network",
+ "target": "output_figures_11_rules_graph_top25_lift_herb_marker_chives",
+ "relation": "references",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "output_figures_11_rules_graph_top25_lift_product_association_network",
+ "target": "output_figures_11_rules_graph_top25_lift_herb_marker_basil",
+ "relation": "references",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "output_figures_11_rules_graph_top25_lift_association_rules",
+ "target": "output_figures_11_rules_graph_top25_lift_product_association_network",
+ "relation": "implement",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "output_figures_11_rules_graph_top25_lift_lift_metric",
+ "target": "output_figures_11_rules_graph_top25_lift_association_rules",
+ "relation": "semantically_similar_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "output_figures_11_rules_graph_top25_lift_support_metric",
+ "target": "output_figures_11_rules_graph_top25_lift_association_rules",
+ "relation": "semantically_similar_to",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "output_figures_11_rules_graph_top25_lift_lift_metric",
+ "target": "output_figures_11_rules_graph_top25_lift_product_association_network",
+ "relation": "shares_data_with",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "weight": 1.0
+ },
+ {
+ "source": "output_figures_11_rules_graph_top25_lift_support_metric",
+ "target": "output_figures_11_rules_graph_top25_lift_product_association_network",
+ "relation": "shares_data_with",
+ "confidence": "EXTRACTED",
+ "confidence_score": 1.0,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png",
+ "source_location": null,
+ "weight": 1.0
+ }
+ ],
+ "hyperedges": [
+ {
+ "id": "output_figures_11_rules_graph_top25_lift_hyperedge_herb_markers",
+ "label": "Herb Marker Product Association Set",
+ "nodes": [
+ "output_figures_11_rules_graph_top25_lift_herb_marker_mint",
+ "output_figures_11_rules_graph_top25_lift_herb_marker_thyme",
+ "output_figures_11_rules_graph_top25_lift_herb_marker_rosemary",
+ "output_figures_11_rules_graph_top25_lift_herb_marker_parsley",
+ "output_figures_11_rules_graph_top25_lift_herb_marker_chives",
+ "output_figures_11_rules_graph_top25_lift_herb_marker_basil"
+ ],
+ "relation": "participate_in",
+ "confidence": "INFERRED",
+ "confidence_score": 0.85,
+ "source_file": "/home/joshua/Downloads/DWDM/output/figures/11_rules_graph_top25_lift.png"
+ }
+ ],
+ "input_tokens": 0,
+ "output_tokens": 0
+}

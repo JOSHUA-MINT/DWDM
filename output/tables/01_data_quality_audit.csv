@@ -1,0 +1,11 @@
+"Check","Value"
+"Total rows",541909
+"Missing Description",1454
+"Missing CustomerID",135080
+"Cancelled invoices (InvoiceNo starts with 'C')",9288
+"Quantity <= 0",10624
+"UnitPrice <= 0",2517
+"Duplicate rows",5268
+"Distinct invoices",25900
+"Distinct stock codes",4070
+"Distinct countries",38
