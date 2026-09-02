@@ -6,6 +6,18 @@
   "4": "5. Exploratory Data Analysis (EDA)",
   "5": "8. Model Evaluation",
   "6": "4. Data Preprocessing",
-  "7": "3. Dataset Description",
-  "8": "2. Problem Statement & Objectives"
+  "7": "DASHBOARD_VISUAL_GUIDE.md",
+  "8": "Basket Lens — Every Number on the Dashboard, Traced to Its Source",
+  "9": "Basket Lens — Code Walkthrough (What Runs, What It Produces)",
+  "10": "Basket Lens — How This Project Actually Works (Plain-English Deep Dive)",
+  "11": "Basket Lens — Theory Behind the Project (Formulas Explained Simply)",
+  "12": "PART B — Viva / Exam Prep: Likely Questions & Model Answers",
+  "13": "PART A — Section-by-Section Code Walkthrough",
+  "14": "Part 9 — Things worth knowing (quirks and gotchas)",
+  "15": "`R/01_load_clean.R` — download, audit, clean",
+  "16": "Tab 5 — Segments",
+  "17": "3. The Data Pipeline, Step by Step (with formulas as they appear)",
+  "18": "Part 0 — The machine behind the screen",
+  "19": "Tab 5 — Segments",
+  "20": "Tab 2 — Exploratory"
 }

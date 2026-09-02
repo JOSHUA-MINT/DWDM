@@ -1,8 +1,8 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1788367748.8042562,
-    "seen": 1788390103.4820402,
-    "ast_hash": "0fcc8665e572ab7be3dc76db735a1775",
+    "mtime": 1788276282.86071,
+    "seen": 1788278510.810783,
+    "ast_hash": "00e4dbdae42ef925bf9c97aa59472c4e",
     "semantic_hash": ""
   },
   "R/00_setup.R": {
@@ -60,8 +60,8 @@
     "semantic_hash": ""
   },
   "output/tables/03_transactions_summary.txt": {
-    "mtime": 1788388475.5347984,
-    "seen": 1788390103.4820845,
+    "mtime": 1788282006.672241,
+    "seen": 1788285410.7035618,
     "ast_hash": "0f4022efd514b267d9dfc5ff1c995684",
     "semantic_hash": ""
   },
@@ -72,56 +72,56 @@
     "semantic_hash": ""
   },
   "output/figures/01_top_items_frequency.png": {
-    "mtime": 1788388472.2997534,
-    "seen": 1788390103.4820995,
+    "mtime": 1788282210.798122,
+    "seen": 1788285410.703568,
     "ast_hash": "d6c8fc51da21bb31a30005de461472a1",
     "semantic_hash": ""
   },
   "output/figures/02_top_items_revenue.png": {
-    "mtime": 1788388472.576712,
-    "seen": 1788390103.482101,
+    "mtime": 1788282211.0811248,
+    "seen": 1788285410.7035708,
     "ast_hash": "e9360712b1b95f3390b8fd92275ad0ef",
     "semantic_hash": ""
   },
   "output/figures/03_basket_size_distribution.png": {
-    "mtime": 1788388473.0216455,
-    "seen": 1788390103.4821026,
+    "mtime": 1788282211.5461292,
+    "seen": 1788285410.7035735,
     "ast_hash": "9975ee0a805464391bad31c3d1da0472",
     "semantic_hash": ""
   },
   "output/figures/04_monthly_revenue.png": {
-    "mtime": 1788388473.4545834,
-    "seen": 1788390103.482104,
+    "mtime": 1788282212.0161335,
+    "seen": 1788285410.7035763,
     "ast_hash": "11a1009c597964aa67b59ad64c50d161",
     "semantic_hash": ""
   },
   "output/figures/05_weekday_hour_heatmap.png": {
-    "mtime": 1788388473.6635532,
-    "seen": 1788390103.4821053,
+    "mtime": 1788282212.2281356,
+    "seen": 1788285410.7035794,
     "ast_hash": "00cd309e8a18d2e11158cc75bf941f4f",
     "semantic_hash": ""
   },
   "output/figures/06_top_countries.png": {
-    "mtime": 1788388473.8625247,
-    "seen": 1788390103.482107,
+    "mtime": 1788282212.4351377,
+    "seen": 1788285410.7035825,
     "ast_hash": "ef64e5df73730ba0f13adabcd9df98a6",
     "semantic_hash": ""
   },
   "output/figures/07_item_frequency_relative.png": {
-    "mtime": 1788388475.5822885,
-    "seen": 1788390103.4821084,
+    "mtime": 1788282006.7192414,
+    "seen": 1788285410.7035854,
     "ast_hash": "e1a8206925f9983839163f34f8b62980",
     "semantic_hash": ""
   },
   "output/figures/08_threshold_sensitivity.png": {
-    "mtime": 1788388482.2579806,
-    "seen": 1788390103.4821098,
+    "mtime": 1788282013.3472998,
+    "seen": 1788285410.7035878,
     "ast_hash": "5d896b3bb8baa69a7d1e470da0037418",
     "semantic_hash": ""
   },
   "output/figures/09_rules_scatter.png": {
-    "mtime": 1788388482.620992,
-    "seen": 1788390103.4821112,
+    "mtime": 1788282013.708303,
+    "seen": 1788285410.7035906,
     "ast_hash": "b57bbcff8425d93235965cb744914e6a",
     "semantic_hash": ""
   },
@@ -150,14 +150,14 @@
     "semantic_hash": ""
   },
   "output/figures/14_top_rules_by_lift_bars.png": {
-    "mtime": 1788388482.8659997,
-    "seen": 1788390103.4821198,
+    "mtime": 1788282013.9383051,
+    "seen": 1788285410.7036057,
     "ast_hash": "4cfc895d7572e954c4819fe2045480d6",
     "semantic_hash": ""
   },
   "output/figures/15_cross_sell_opportunity_value.png": {
-    "mtime": 1788388491.2811737,
-    "seen": 1788390103.4821212,
+    "mtime": 1788282022.3663797,
+    "seen": 1788285410.7036085,
     "ast_hash": "16424eb1923944d39abd5a6ea57b6c09",
     "semantic_hash": ""
   },
@@ -165,90 +165,6 @@
     "mtime": 1788286083.688579,
     "seen": 1788286157.3249624,
     "ast_hash": "431ab8debe93bf84793a5c6fcbb1b997",
-    "semantic_hash": ""
-  },
-  "APP_R_VIVA_PREP.md": {
-    "mtime": 1788383124.4916565,
-    "seen": 1788390103.4820697,
-    "ast_hash": "7fc0a0c5f46d35133bbe9bee64130512",
-    "semantic_hash": ""
-  },
-  "CODE_EXPLAINED.md": {
-    "mtime": 1788379523.191227,
-    "seen": 1788390103.482072,
-    "ast_hash": "57333611ceea343627d860c90a11c935",
-    "semantic_hash": ""
-  },
-  "DASHBOARD_VISUAL_GUIDE.md": {
-    "mtime": 1788390102.2406838,
-    "seen": 1788390103.4820738,
-    "ast_hash": "41f4710ab6fb6061c2aea80a92d27584",
-    "semantic_hash": ""
-  },
-  "NUMBERS_TRACED.md": {
-    "mtime": 1788379729.0217347,
-    "seen": 1788390103.4820755,
-    "ast_hash": "9925cfe5d1d388dcff7135a0fc9446cc",
-    "semantic_hash": ""
-  },
-  "PROJECT_EXPLAINED.md": {
-    "mtime": 1788367917.3937962,
-    "seen": 1788390103.482077,
-    "ast_hash": "52b9592f95a5b89e22b848ec0c000975",
-    "semantic_hash": ""
-  },
-  "THEORY.md": {
-    "mtime": 1788379610.6840177,
-    "seen": 1788390103.4820828,
-    "ast_hash": "d9ae842c2d9a490f3991813c601d0402",
-    "semantic_hash": ""
-  },
-  "docs/screenshots/tab1_overview.png": {
-    "mtime": 1788389371.9802163,
-    "seen": 1788390103.4820876,
-    "ast_hash": "1d311c9887e21c3a21d20dcc06bc909c",
-    "semantic_hash": ""
-  },
-  "docs/screenshots/tab2_eda.png": {
-    "mtime": 1788389221.6387167,
-    "seen": 1788390103.4820893,
-    "ast_hash": "b5b18f789c3aca7192a37302aa6efe69",
-    "semantic_hash": ""
-  },
-  "docs/screenshots/tab3_rules.png": {
-    "mtime": 1788389442.9673207,
-    "seen": 1788390103.4820907,
-    "ast_hash": "4dd1be215953e5e0d84e4e983e6b4b7a",
-    "semantic_hash": ""
-  },
-  "docs/screenshots/tab4_explorer.png": {
-    "mtime": 1788389444.2612855,
-    "seen": 1788390103.4820921,
-    "ast_hash": "4bae4798f7bd09f0a8a2b68ab3324089",
-    "semantic_hash": ""
-  },
-  "docs/screenshots/tab5_segments.png": {
-    "mtime": 1788389373.7851691,
-    "seen": 1788390103.4820933,
-    "ast_hash": "0488dad8d28e3cc94be1dc65d8e5985e",
-    "semantic_hash": ""
-  },
-  "docs/screenshots/tab6_recommender.png": {
-    "mtime": 1788389374.2651567,
-    "seen": 1788390103.4820945,
-    "ast_hash": "30084ae0045edd655d3011c62ac8235a",
-    "semantic_hash": ""
-  },
-  "docs/screenshots/tab6b_recommender_results.png": {
-    "mtime": 1788389552.6272676,
-    "seen": 1788390103.4820962,
-    "ast_hash": "32e9df86c087a48824542b39c2406d55",
-    "semantic_hash": ""
-  },
-  "docs/screenshots/tab7_crosssell.png": {
-    "mtime": 1788389431.0886438,
-    "seen": 1788390103.4820976,
-    "ast_hash": "38cf9038b9cf342fbdebf2f48bf7441f",
     "semantic_hash": ""
   }
 }
