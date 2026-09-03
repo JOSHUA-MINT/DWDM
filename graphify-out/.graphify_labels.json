@@ -4,8 +4,8 @@
   "2": "The Dashboard: \"Basket Lens\"",
   "3": "6. Algorithms Used",
   "4": "5. Exploratory Data Analysis (EDA)",
-  "5": "8. Model Evaluation",
-  "6": "4. Data Preprocessing",
+  "5": "Tab 1 — Overview",
+  "6": "`R/05_segments_and_recommendations.R` — business layer",
   "7": "DASHBOARD_VISUAL_GUIDE.md",
   "8": "Basket Lens — Every Number on the Dashboard, Traced to Its Source",
   "9": "Basket Lens — Code Walkthrough (What Runs, What It Produces)",
@@ -16,8 +16,7 @@
   "14": "Part 9 — Things worth knowing (quirks and gotchas)",
   "15": "`R/01_load_clean.R` — download, audit, clean",
   "16": "Tab 5 — Segments",
-  "17": "3. The Data Pipeline, Step by Step (with formulas as they appear)",
+  "17": "Tab 3 — Rules",
   "18": "Part 0 — The machine behind the screen",
-  "19": "Tab 5 — Segments",
-  "20": "Tab 2 — Exploratory"
+  "19": "Tab 5 — Segments"
 }

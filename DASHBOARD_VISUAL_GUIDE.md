@@ -1,15 +1,23 @@
 # Basket Lens — Visual Guide to Every Feature
 
 **What this document is.** A screen-by-screen tour of the running dashboard. For
-every panel you see, it answers four questions:
+every panel you see, it answers five questions:
 
 1. **What am I looking at?** — the picture itself, embedded here.
 2. **What code makes it?** — the exact line in `app.R` (and the pipeline script
    behind it).
-3. **Where did the numbers come from?** — traced back through the CSV/RDS files
+3. **How exactly was this number calculated?** — the definition in words, the
+   formula in symbols, the literal code that evaluates it, and an arithmetic
+   check you can do out loud.
+4. **Where did the numbers come from?** — traced back through the CSV/RDS files
    to the raw dataset.
-4. **What is it actually telling me?** — how to read the chart, and what the
+5. **What is it actually telling me?** — how to read the chart, and what the
    result means.
+
+> **If you are being questioned on a number**, jump to
+> [Appendix C](#appendix-c--how-did-you-get-this-number-quick-index). It lists
+> every value the dashboard displays with a one-line formula and the section
+> that derives it in full.
 
 The screenshots in `docs/screenshots/` were captured from the live app
 (`http://127.0.0.1:3838`) against the current contents of `data/processed/` and
@@ -41,6 +49,9 @@ Related docs, and how this one differs:
 - [Tab 7 — Cross-Sell](#tab-7--cross-sell)
 - [Part 8 — Formula reference](#part-8--formula-reference)
 - [Part 9 — Things worth knowing](#part-9--things-worth-knowing-quirks-and-gotchas)
+- [Appendix A — Panel-to-code index](#appendix-a--panel-to-code-index)
+- [Appendix B — Which script writes which file](#appendix-b--which-script-writes-which-file)
+- [Appendix C — "How did you get this number?" quick index](#appendix-c--how-did-you-get-this-number-quick-index)
 
 ---
 
@@ -154,11 +165,51 @@ From `R/01_load_clean.R`. The audit runs *before* any filtering
 | Distinct stock codes | 4,070 |
 | Distinct countries | 38 |
 
-Then eight filters run in order: drop missing descriptions → drop cancellations
-→ require `Quantity > 0` and `UnitPrice > 0` → drop 16 admin stock codes
-(`POST`, `DOT`, `M`, `BANK CHARGES`, `AMAZONFEE`, …) → uppercase and trim → drop
-junk descriptions by regex (`damaged`, `lost`, `adjust`, `smashed`, …) → require
-description longer than 2 characters → `distinct(InvoiceNo, StockCode)`.
+Each audit row is one line of `R/01_load_clean.R:42-51`, and each is a plain
+count over the *raw* frame — e.g. cancellations are
+`sum(grepl("^C", raw$InvoiceNo))`, missing customers are
+`sum(is.na(raw$CustomerID))`. Nothing is filtered yet; that is the whole point
+of running the audit first.
+
+### The eight filters, in the order they execute
+
+`R/01_load_clean.R:67-78` — one pipeline, eight `filter()` calls:
+
+```r
+retail <- raw |>
+  dplyr::filter(!is.na(Description)) |>                        # 1  L68
+  dplyr::filter(!grepl("^C", InvoiceNo)) |>                    # 2  L69  cancellations
+  dplyr::filter(Quantity > 0, UnitPrice > 0) |>                # 3  L70  returns / freebies
+  dplyr::filter(!toupper(trimws(StockCode)) %in%
+                 toupper(admin_codes)) |>                      # 4  L71  POST, DOT, M, ...
+  dplyr::mutate(Description = trimws(toupper(Description)),
+                StockCode   = trimws(toupper(StockCode))) |>   # 5  L72-75 normalise
+  dplyr::filter(!grepl(junk_desc, Description, perl = TRUE)) |># 6  L76  damaged/lost/adjust
+  dplyr::filter(nchar(Description) > 2) |>                     # 7  L77
+  dplyr::distinct(InvoiceNo, StockCode, .keep_all = TRUE)      # 8  L78  1 row per item per basket
+```
+
+Filter 8 is the one to remember when anyone asks about revenue: after it, a
+basket holds **one row per distinct product**, not one row per scanned line. If
+an invoice listed the same stock code twice, only the first line survives — and
+so does only that line's `Revenue`.
+
+### The derived columns, created immediately after (`L79-85`)
+
+```r
+dplyr::mutate(
+  Revenue = Quantity * UnitPrice,                                        # L80
+  Date    = as.Date(InvoiceDate),                                        # L81
+  Month   = lubridate::floor_date(Date, "month"),                        # L82
+  Hour    = lubridate::hour(InvoiceDate),                                # L83
+  Weekday = lubridate::wday(Date, label = TRUE, abbr = TRUE, week_start = 1)  # L84
+)
+```
+
+**`Revenue` is defined exactly once, on line 80, and every money figure anywhere
+on the dashboard is a sum of that column.** There is no other revenue
+definition in the project. `Month`, `Hour` and `Weekday` are likewise the only
+source of the time axes on the Overview tab.
 
 Two steps after that matter for the analysis:
 
@@ -184,6 +235,28 @@ The result (`output/tables/01_cleaning_summary.csv`):
 | Total revenue (GBP) | **9,658,813** |
 
 Those four bold numbers are exactly the four KPI boxes on the Overview tab.
+
+### How each row of that summary is computed
+
+Every entry is one expression in `R/01_load_clean.R:110-119`. Read left to right
+if you are asked to defend any of them:
+
+| Metric | Code (`01_load_clean.R`) | In words |
+|---|---|---|
+| Rows after cleaning | `nrow(retail)` — L110 | surviving line items |
+| Rows removed | `nrow(raw) - nrow(retail)` — L111 | 541,909 − 515,784 |
+| % rows retained | `100 * nrow(retail) / nrow(raw)` — L112 | 515,784 ÷ 541,909 = 95.2% |
+| Transactions (baskets) | `n_distinct(retail$InvoiceNo)` — L113 | distinct invoice numbers |
+| Unique products | `n_distinct(retail$Item)` — L114 | distinct *canonical* names |
+| Countries | `n_distinct(retail$Country)` — L115 | |
+| Date range | `min(retail$Date)` / `max(retail$Date)` — L116 | |
+| Mean basket size | `nrow(retail) / n_distinct(retail$InvoiceNo)` — L117 | 515,784 ÷ 18,273 = 28.23 |
+| Median basket size | `median(basket_sizes$BasketSize[... >= 2])` — L118 | middle basket = 17 |
+| Total revenue | `round(sum(retail$Revenue))` — L119 | Σ (Quantity × UnitPrice) |
+
+Note **Mean basket size** is rows ÷ baskets, which is legitimate *only because*
+filter 8 already reduced the table to one row per product per basket. It is
+therefore "mean distinct products per basket", not "mean units per basket".
 
 ## 0.5 The parameters that control everything
 
@@ -224,16 +297,196 @@ charts. Layout defined at `app.R:171-192`.
 All four are computed live from the loaded objects, not read from a CSV — which
 is why they always agree with whatever is currently in `data/processed/`.
 
-A note on **Total Revenue**: `Revenue` is created in `01_load_clean.R` as
-`Quantity * UnitPrice`, *after* cancellations and non-positive quantities have
-been removed. So GBP 9.66M is gross sales on retained, non-cancelled,
-multi-item baskets — not the retailer's audited turnover.
+Each is derived in full below.
+
+### KPI 1 — Baskets = 18,273
+
+**Definition.** The number of distinct invoices remaining after cleaning. One
+invoice = one shopping basket = one transaction in the Apriori sense.
+
+**Formula.** `N = |{ distinct InvoiceNo }|`
+
+```r
+# app.R:471-477
+output$ov_baskets <- renderValueBox({
+  d <- D(); if (is.null(d) || is.null(d$retail)) return(NULL)
+  valueBox(
+    format(n_distinct(d$retail$InvoiceNo), big.mark = ","),   # <-- the number
+    "Baskets", icon = icon("shopping-basket"), color = "blue"
+  )
+})
+```
+
+**Chain.** raw 25,900 invoices → drop cancellations, admin codes, junk rows →
+drop baskets left with a single item (`01_load_clean.R:100-102`) → **18,273**.
+
+**Why it matters.** This is the `N` in every support calculation on the
+dashboard. If anyone asks "18,273 out of what?", the answer is 25,900 raw
+invoices, reduced by cleaning and by the ≥2-items rule.
+
+**Check.** 16,506 UK + 1,767 international = 18,273 ✓ (Segments tab).
+6,139 festive + 12,134 rest-of-year = 18,273 ✓ (Seasonal tab).
+
+### KPI 2 — Unique Products = 3,765
+
+**Definition.** Distinct *canonical* item names, not distinct stock codes.
+
+**Formula.** `|{ distinct Item }|`
+
+```r
+# app.R:478-484
+valueBox(format(n_distinct(d$retail$Item), big.mark = ","), "Unique Products", ...)
+```
+
+**Chain.** `Item` is not a raw column — it is built at
+`R/01_load_clean.R:88-97`. The same `StockCode` appears with drifting
+descriptions, so the most frequent description per code is elected as the label:
+
+```r
+canonical <- retail |>
+  dplyr::count(StockCode, Description, name = "n") |>   # L89  every code/label pair
+  dplyr::group_by(StockCode) |>
+  dplyr::slice_max(n, n = 1, with_ties = FALSE) |>      # L91  the winner
+  dplyr::ungroup() |>
+  dplyr::select(StockCode, Item = Description)          # L93  becomes `Item`
+
+retail <- retail |> dplyr::left_join(canonical, by = "StockCode")   # L96
+```
+
+**Why 3,765 and not the raw 4,070 stock codes.** Admin codes were removed, junk
+descriptions were removed, and any two codes that resolve to the same winning
+description collapse into one `Item`. Every association rule on this dashboard
+is expressed in `Item`, so this is the correct denominator for "products".
+
+### KPI 3 — Significant Rules = 2,215
+
+**Definition.** Association rules that survived all four filters: minimum
+support, minimum confidence, lift > 1, non-redundant, and BH-adjusted
+p < 0.05.
+
+**Formula.** `length(sig_rules)`
+
+```r
+# app.R:485-491
+valueBox(format(length(d$sig), big.mark = ","), "Significant Rules", ...)
+```
+
+`d$sig` is the object `rules_significant.rds`, written at
+`R/03_apriori.R:168`. The full pipeline that produced it is derived under
+[Tab 3 — Rules](#tab-3--rules): 2,229 raw → 2,215 after redundancy removal →
+2,215 after the significance test.
+
+### KPI 4 — Total Revenue = GBP 9,658,813
+
+This is the number most likely to be challenged, so here is the whole chain.
+
+**Definition.** The sum of `Quantity × UnitPrice` over every line item that
+survived cleaning. It is *gross merchandise value on retained lines* — not
+turnover, not net of returns, not the retailer's audited accounts.
+
+**Formula.**
+
+```
+Revenue_i = Quantity_i × UnitPrice_i          for each surviving line item i
+Total     = Σ Revenue_i   over all 515,784 lines
+```
+
+**Step 1 — the column is created once**, at `R/01_load_clean.R:80`, *after* all
+eight filters have run:
+
+```r
+dplyr::mutate(
+  Revenue = Quantity * UnitPrice,   # R/01_load_clean.R:80
+  ...
+)
+```
+
+**Step 2 — the KPI sums it**, at `app.R:492-498`:
+
+```r
+output$ov_revenue <- renderValueBox({
+  d <- D(); if (is.null(d) || is.null(d$retail)) return(NULL)
+  valueBox(
+    paste0("GBP ", format(round(sum(d$retail$Revenue)), big.mark = ",")),
+    #               ^^^^^ round to whole pounds   ^^^^^^^^^^^^ 9658813 -> "9,658,813"
+    "Total Revenue", icon = icon("pound-sign"), color = "orange"
+  )
+})
+```
+
+The unrounded value is **9,658,812.83**; `round()` at line 495 makes it
+9,658,813 and `format(big.mark = ",")` inserts the separators. Nothing else is
+applied — no currency conversion, no discounting.
+
+**What has been excluded before the sum, and where.** Say this list out loud if
+asked why the figure differs from the raw file:
+
+| Excluded | Line | Effect on revenue |
+|---|---|---|
+| Rows with no description | `01:68` | removes unlabelled sales |
+| Cancelled invoices (`C…`) | `01:69` | removes negative-revenue reversals |
+| `Quantity <= 0` or `UnitPrice <= 0` | `01:70` | removes returns and zero-priced giveaways |
+| Postage / fees / admin codes | `01:71` | **removes non-merchandise income** |
+| Junk descriptions (damaged, lost, adjust…) | `01:76` | removes stock-adjustment rows |
+| Repeat lines of the same product in one invoice | `01:78` | keeps only the first line's revenue |
+| Single-item baskets | `01:100-102` | removes baskets that cannot form a rule |
+
+**Two independent cross-checks** — both are recomputed by different code paths,
+from different aggregations, and both land on the same figure:
+
+| Cross-check | Sum | Code |
+|---|---:|---|
+| Σ of the 13 monthly bars | 9,658,812.83 | `02_eda.R:73-77` |
+| Σ of all 38 country rows | 9,658,812.83 | `02_eda.R:105-111` |
+| Overview KPI | 9,658,812.83 | `app.R:495` |
+
+If the examiner asks "prove it", add up the Monthly Revenue Trend table below —
+it reconciles to the penny, because both are `sum(Revenue)` over the same
+column, grouped differently.
 
 ## Monthly Revenue Trend
 
 **Code:** `plotOutput` at `app.R:180`, `renderPlot` at `app.R:500-511`.
-**Data:** `output/tables/02_monthly_sales.csv`, written by `R/02_eda.R` from
-`group_by(Month) |> summarise(Revenue = sum(Revenue))`.
+**Data:** `output/tables/02_monthly_sales.csv`.
+
+**How each bar height is calculated.**
+
+**Definition.** Bar height = total revenue of every line item whose invoice date
+falls in that calendar month. The `Transactions` column beside it is the count
+of *distinct invoices* in the month, not the number of line items.
+
+**Formula.** `Revenue(m) = Σ Revenue_i  for all i where Month_i = m`
+
+Step 1 — the month label is derived from the timestamp
+(`R/01_load_clean.R:82`): `Month = lubridate::floor_date(Date, "month")`, so
+every date in November 2011 becomes `2011-11-01`.
+
+Step 2 — the aggregation, `R/02_eda.R:73-77`:
+
+```r
+monthly <- retail |>
+  dplyr::group_by(Month) |>
+  dplyr::summarise(Revenue      = sum(Revenue),                 # bar height
+                   Transactions = dplyr::n_distinct(InvoiceNo), # invoices that month
+                   .groups = "drop")
+save_tab(monthly, "02_monthly_sales")
+```
+
+Step 3 — the app only *draws* it; it computes nothing (`app.R:500-509`):
+
+```r
+d$monthly %>%
+  mutate(Month = as.Date(Month)) %>%
+  ggplot(aes(Month, Revenue)) +
+  geom_col(fill = "#D94801", width = 18) +
+  scale_y_continuous(labels = label_number(prefix = "GBP ", scale = 1e-3, suffix = "k"))
+```
+
+`scale = 1e-3` is why the axis reads "GBP 1,411k" rather than 1,411,515 — a
+display transform only, applied at `app.R:506`.
+
+**Check.** The 13 bars sum to 9,658,812.83 = the Total Revenue KPI ✓, and the
+13 `Transactions` values sum to 18,273 = the Baskets KPI ✓.
 
 The exact bar heights:
 
@@ -268,8 +521,36 @@ The Sep–Nov bulge is what motivates the seasonal split on the Segments tab.
 **Code:** `app.R:182` / `app.R:512-525`.
 **Data:** first 10 rows of `output/tables/02_top50_items_by_frequency.csv`.
 
-The count is *baskets containing the product*, not units sold — `count(Item)`
-on a table already reduced to one row per item per basket.
+**How the bar length and the Support column are calculated.**
+
+**Definition.** `Baskets` is the number of *distinct invoices that contain the
+product at least once* — not units sold, and not line-item count. `Support` is
+that count expressed as a fraction of all baskets.
+
+**Formula.** `Baskets(item) = |{ invoices containing item }|`,
+`Support(item) = Baskets(item) / 18,273`
+
+`R/02_eda.R:11-16`:
+
+```r
+top_items <- retail |>
+  dplyr::count(Item, name = "Baskets") |>                                  # L12
+  dplyr::mutate(Support = Baskets / dplyr::n_distinct(retail$InvoiceNo)) |># L13
+  dplyr::arrange(dplyr::desc(Baskets))                                     # L14
+
+save_tab(head(top_items, 50), "02_top50_items_by_frequency")               # L16
+```
+
+`count(Item)` counts *rows*, and a plain row count equals a basket count only
+because `01_load_clean.R:78` already collapsed each (invoice, product) pair to
+one row. **That single `distinct()` is what makes this a support count rather
+than a units count** — worth saying if asked why no `n_distinct(InvoiceNo)`
+appears here.
+
+The app takes the first 10 rows and draws them (`app.R:512-524`); the
+`geom_text` label at `app.R:518` is the same `Baskets` value printed on the bar.
+
+**Check.** Row 1: 2,246 ÷ 18,273 = 0.12291 = the `Support` column ✓.
 
 | Rank | Product | Baskets | Support |
 |---|---|---:|---:|
@@ -291,15 +572,34 @@ tail is why a 1% support threshold is not as permissive as it sounds.
 ## Trading Rhythm: Weekday × Hour
 
 **Code:** `app.R:186` / `app.R:526-537`.
-**Data:** computed live, not from a CSV:
+**Data:** computed live in the app, not read from a CSV.
+
+**How each tile's colour value is calculated.**
+
+**Definition.** Tile value = the number of distinct invoices placed in that
+(weekday, hour) cell. It is a transaction count, not a revenue or units figure.
+
+**Formula.** `Transactions(w, h) = |{ distinct InvoiceNo with Weekday = w and Hour = h }|`
 
 ```r
-d$retail |> distinct(InvoiceNo, Weekday, Hour) |> count(Weekday, Hour)
+# app.R:526-535
+d$retail %>%
+  distinct(InvoiceNo, Weekday, Hour) %>%        # L529  one row per invoice
+  count(Weekday, Hour, name = "Transactions") %>%   # L530  the tile value
+  ggplot(aes(x = Hour, y = Weekday, fill = Transactions)) +
+  geom_tile(colour = "white") +
+  scale_fill_distiller(palette = "YlGnBu", direction = 1, labels = comma)
 ```
 
-`distinct()` first, so each *invoice* is counted once rather than once per line
-item. `Weekday` and `Hour` were derived in `01_load_clean.R` with
-`lubridate::wday()` and `lubridate::hour()`.
+`distinct()` on line 529 is doing the real work: without it, a 300-line
+wholesale order would count 300 times and the heatmap would show order *size*
+rather than order *frequency*. The inputs come from `01_load_clean.R:83-84`,
+where `Hour = lubridate::hour(InvoiceDate)` and
+`Weekday = lubridate::wday(Date, label = TRUE, week_start = 1)` — `week_start = 1`
+is why the axis begins at Monday.
+
+Identical logic produces the static figure `05_weekday_hour_heatmap.png` at
+`R/02_eda.R:91-93`.
 
 **What it says.** Trading is concentrated Monday–Friday, roughly 09:00–15:00,
 peaking around midday Wednesday–Thursday. Two things to notice:
@@ -316,6 +616,42 @@ hours.
 
 **Code:** `app.R:188` / `app.R:538-549`.
 **Data:** `output/tables/02_by_country.csv`, sorted descending, first 10.
+
+**How the three columns are calculated.**
+
+**Definition.** `Transactions` = distinct invoices billed to that country;
+`Revenue` = sum of line-item revenue for those invoices; `Share` = that
+country's revenue divided by total revenue across all 38 countries.
+
+**Formula.**
+`Revenue(c) = Σ Revenue_i for Country_i = c`,
+`Share(c) = Revenue(c) / Σ_all Revenue`
+
+`R/02_eda.R:105-111`:
+
+```r
+by_country <- retail |>
+  dplyr::group_by(Country) |>
+  dplyr::summarise(Transactions = dplyr::n_distinct(InvoiceNo),   # L107
+                   Revenue      = sum(Revenue), .groups = "drop") |>  # L108
+  dplyr::arrange(dplyr::desc(Revenue)) |>
+  dplyr::mutate(RevenueShare = Revenue / sum(Revenue))             # L110
+save_tab(by_country, "02_by_country")
+```
+
+The app re-sorts and slices to ten (`app.R:540`):
+`head(arrange(d$by_country, desc(Revenue)), 10)`. **The share column is computed
+over all 38 countries, then the top 10 are displayed** — so the ten visible
+shares deliberately do not sum to 100%.
+
+**Check.** UK: 8,169,433.72 ÷ 9,658,812.83 = 0.8458 = 84.6% ✓. All 38 country
+revenues sum to 9,658,812.83 = the Total Revenue KPI ✓, and the 38
+`Transactions` values sum to 18,273 ✓ (a country is a property of the invoice,
+so no basket is split across two countries).
+
+The per-basket figures quoted below are hand-derived from these two columns,
+not computed by the app: 8,169,434 ÷ 16,506 = GBP 494.94 for the UK, and
+273,284 ÷ 80 = GBP 3,416.06 for the Netherlands.
 
 | Country | Transactions | Revenue (GBP) | Share |
 |---|---:|---:|---:|
@@ -379,8 +715,39 @@ still 1,152. There is no runaway bestseller; the business is broad.
 
 **Control:** `selectInput("eda_rev_n")` at `app.R:202`.
 **Code:** `app.R:204` / `app.R:569-581`.
-**Data:** `head(02_top50_items_by_revenue.csv, n)`, built with
-`summarise(Revenue = sum(Revenue), Units = sum(Quantity))`.
+**Data:** `head(02_top50_items_by_revenue.csv, n)`.
+
+**How each bar is calculated.**
+
+**Definition.** Bar length = every pound this product earned across the whole
+year: sum of `Quantity × UnitPrice` over all its surviving line items. The
+companion `Units` column is total pieces sold.
+
+**Formula.** `Revenue(item) = Σ (Quantity_i × UnitPrice_i)` over rows with that
+`Item`; `Units(item) = Σ Quantity_i`
+
+`R/02_eda.R:31-35`:
+
+```r
+top_revenue <- retail |>
+  dplyr::group_by(Item) |>
+  dplyr::summarise(Revenue = sum(Revenue),      # L33  bar length
+                   Units   = sum(Quantity),     # L33  pieces sold
+                   .groups = "drop") |>
+  dplyr::arrange(dplyr::desc(Revenue))          # L34
+save_tab(head(top_revenue, 50), "02_top50_items_by_revenue")
+```
+
+**The contrast with the chart on the left, stated precisely.** Both are grouped
+by `Item`; only the aggregate differs — `count()` (rows, i.e. baskets) on the
+left versus `sum(Revenue)` (money) here. That one substitution is the entire
+reason the rankings disagree.
+
+**Check.** REGENCY CAKESTAND 3 TIER: GBP 165,394.06 from 13,048 units →
+implied average line value 165,394.06 ÷ 13,048 = GBP 12.68 per unit, against
+WHITE HANGING HEART's 98,952.18 ÷ 35,046 = GBP 2.82. Nearly 4.5× the unit
+value on a quarter of the volume — that is why an item ranked 3rd by frequency
+is 1st by revenue.
 
 **Read this chart against the one on its left — that is the whole point of the
 pairing.** The ordering changes:
@@ -407,8 +774,48 @@ bolt price back on.
 ## Basket Size Distribution
 
 **Code:** `app.R:208` / `app.R:582-595`.
-**Data:** computed live — `d$retail |> count(InvoiceNo, name = "BasketSize")`.
-Subtitle statistics are computed in the same block.
+**Data:** computed live in the app; the printed statistics table comes from
+`output/tables/02_basket_size_stats.csv`.
+
+**How the bar heights and the subtitle numbers are calculated.**
+
+**Definition.** `BasketSize` = the number of *distinct products* in one invoice.
+The histogram's y-axis is then the number of baskets falling in each 2-product
+bin.
+
+**Formula.** `BasketSize(inv) = |{ distinct products in inv }|`, binned at
+width 2.
+
+```r
+# app.R:582-593
+bs <- d$retail %>% count(InvoiceNo, name = "BasketSize")   # L584  one row per basket
+mn <- round(mean(bs$BasketSize), 1)                        # L585  subtitle mean = 28.2
+md <- median(bs$BasketSize)                                # L586  subtitle median = 17
+ggplot(bs, aes(BasketSize)) +
+  geom_histogram(binwidth = 2, fill = "#6A51A3", colour = "white") +  # L588
+  scale_x_continuous(limits = c(0, 100))                              # L589  crops the tail
+```
+
+Again `count(InvoiceNo)` counts rows, and rows = distinct products per basket
+only because of the `distinct()` at `01_load_clean.R:78`.
+
+The seven-row statistics table is computed once in the pipeline, at
+`R/02_eda.R:61-70`, with base-R `quantile()`:
+
+```r
+data.frame(Statistic = c("Min","Q1","Median","Mean","Q3","P95","Max"),
+           BasketSize = round(c(min(basket_sizes$BasketSize),
+                                quantile(basket_sizes$BasketSize, .25),
+                                median(basket_sizes$BasketSize),
+                                mean(basket_sizes$BasketSize),
+                                quantile(basket_sizes$BasketSize, .75),
+                                quantile(basket_sizes$BasketSize, .95),
+                                max(basket_sizes$BasketSize)), 2))
+```
+
+**Check.** Mean = 515,784 rows ÷ 18,273 baskets = 28.23, identical to
+`Mean basket size` in the cleaning summary (`01_load_clean.R:117`) ✓ — two
+different expressions, same value.
 
 Full statistics from `output/tables/02_basket_size_stats.csv`:
 
@@ -458,9 +865,29 @@ Where the association rules themselves appear. Layout at `app.R:217-246`.
 ## How do rule counts react to threshold pairs?  *(static image)*
 
 **Code:** `show_fig("08_threshold_sensitivity.png")` at `app.R:221`.
-**Produced by:** `R/03_apriori.R`, which runs Apriori **25 separate times** over
-a grid of 5 support × 5 confidence values and records `length(r)` each time.
-Saved to `output/tables/03_threshold_sensitivity.csv`.
+**Produced by:** `R/03_apriori.R:142-152`, which runs Apriori **25 separate
+times** over a grid of 5 support × 5 confidence values and records `length(r)`
+each time. Saved to `output/tables/03_threshold_sensitivity.csv`.
+
+**How each cell is calculated.** There is no formula — each number is the
+literal output of re-running the algorithm at that threshold pair:
+
+```r
+grid <- expand.grid(support    = c(0.005, 0.0075, 0.01, 0.015, 0.02),   # L142
+                    confidence = c(0.2, 0.3, 0.4, 0.5, 0.6))            # L143
+grid$n_rules <- mapply(function(s, c_) {
+  r <- arules::apriori(trans,
+        parameter = list(support = s, confidence = c_,
+                         minlen = 2, maxlen = PARAMS$maxlen),
+        control = list(verbose = FALSE))
+  length(r)                              # L150  <-- the cell value
+}, grid$support, grid$confidence)
+save_tab(grid, "03_threshold_sensitivity")                              # L152
+```
+
+Note the cells are counts of **raw** rules: this loop applies neither the
+`lift > 1` filter, the redundancy removal, nor the significance test. That is
+why the 0.010 / 0.3 cell reads 2,229 while the dashboard's headline is 2,215.
 
 ![Threshold sensitivity](output/figures/08_threshold_sensitivity.png)
 
@@ -508,6 +935,48 @@ Lift        : 2.47 – 75.47
 Mean lift   : 12.97
 =============================================
 ```
+
+**How each line of that box is calculated.** Nothing here is read from a file —
+`quality()` returns the measures `arules` attached to each rule, and the app
+takes six summary statistics off that data frame (`app.R:605-613`):
+
+```r
+cat(sprintf("Total rules : %d\n", length(d$sig)))                       # L607
+q <- quality(d$sig)                                                      # L608
+cat(sprintf("Support     : %.4f – %.4f\n", min(q$support),    max(q$support)))     # L609
+cat(sprintf("Confidence  : %.3f – %.3f\n", min(q$confidence), max(q$confidence)))  # L610
+cat(sprintf("Lift        : %.2f – %.2f\n", min(q$lift),       max(q$lift)))        # L611
+cat(sprintf("Mean lift   : %.2f\n", mean(q$lift)))                       # L612
+```
+
+**Where `q$support`, `q$confidence` and `q$lift` come from.** They are computed
+inside `arules::apriori()` at `R/03_apriori.R:80-88`, over the transaction
+object built at `R/03_apriori.R:18-21`. For a rule X ⇒ Y and N = 18,273
+baskets:
+
+| Measure | Definition in words | Formula | Counted as |
+|---|---|---|---|
+| `support` | share of all baskets holding **both** sides | supp(X ∪ Y) = count(X ∪ Y) / N | `count` ÷ 18,273 |
+| `confidence` | of the baskets holding X, the share that also hold Y | supp(X ∪ Y) / supp(X) | conditional probability P(Y\|X) |
+| `coverage` | share of baskets the rule applies to at all | supp(X) | denominator of confidence |
+| `lift` | how many times better than chance | confidence / supp(Y) | 1 = independent |
+| `count` | absolute baskets holding both sides | supp(X ∪ Y) × N | integer |
+
+**Worked example on the highest-support rule** (`03_top_rules_by_support.csv`,
+row 1) — `{JUMBO BAG PINK POLKADOT} ⇒ {JUMBO BAG RED RETROSPOT}`:
+
+```
+count       = 825 baskets hold both bags
+support     = 825 / 18,273            = 0.04515   ✓ matches the table
+coverage    = supp(PINK POLKADOT)     = 0.06655   (1,216 / 18,273)
+confidence  = 0.04515 / 0.06655       = 0.67845   ✓
+supp(RED RETROSPOT) = 2,073 / 18,273  = 0.11345   (Overview top-10 table)
+lift        = 0.67845 / 0.11345       = 5.98      ✓
+```
+
+Every number in that block is on this page already: 825 from the rule table,
+1,216 and 2,073 from the Exploratory frequency table, 18,273 from the Overview
+KPI. That is the full derivation of a rule, end to end, with no hidden step.
 
 Read the bounds as confirmation that the filters did their job: minimum support
 is exactly 0.0100 and minimum confidence exactly 0.300 — the thresholds — while
@@ -729,7 +1198,7 @@ Does the pattern structure change between markets and between seasons? The
 answer required re-running Apriori on subsets, in
 `R/05_segments_and_recommendations.R`. Layout at `app.R:279-313`.
 
-## The four KPI boxes
+## The four KPI boxes (Segments)
 
 | Box | Value | Code | Computation |
 |---|---|---|---|
@@ -739,6 +1208,33 @@ answer required re-running Apriori on subsets, in
 | Intl Top Rules | 25 | `app.R:700` | `nrow(d$intl_rules)` |
 
 16,506 + 1,767 = 18,273 ✓ — the segments partition the baskets exactly.
+
+**How the two basket counts are calculated.** Both are computed live in the app
+by subsetting the invoice column on `Country`, then counting distinct values —
+`United Kingdom` versus everything else, with no third category:
+
+```r
+# app.R:683-693
+n_uk   <- n_distinct(d$retail$InvoiceNo[d$retail$Country == "United Kingdom"])  # L685
+n_intl <- n_distinct(d$retail$InvoiceNo[d$retail$Country != "United Kingdom"])  # L691
+```
+
+The pipeline draws the same line at `R/05_segments_and_recommendations.R:37`,
+which is what makes the app's KPI and the CSV's `Baskets` column agree:
+
+```r
+retail$Segment <- ifelse(retail$Country == "United Kingdom", "UK", "International")
+```
+
+**How the two "Top Rules" boxes are calculated** — and why they are misleading:
+
+```r
+# app.R:695-703
+n <- if (nrow(d$uk_rules) > 0 && !"Note" %in% names(d$uk_rules)) nrow(d$uk_rules) else 0
+```
+
+`nrow()` of a CSV that `to_df(r, n = 25)` (`R/05_...R:27-28`) already truncated
+to 25 rows. It counts rows in a file, not rules in a model.
 
 ⚠️ **The two "Top Rules" boxes do not show rule counts.** They show the row
 count of `05_top_rules_uk.csv` and `05_top_rules_international.csv`, and those
@@ -757,6 +1253,40 @@ boxes.
 |---|---:|---:|---:|---:|---:|---:|
 | UK | 16,506 | 3,760 | 0.01 | 2,661 | 13.13 | 72.66 |
 | International | 1,767 | 2,778 | **0.02** | 375 | 9.84 | 37.25 |
+
+**How every column of that table is calculated.** The whole table is one
+`data.frame()` at `R/05_segments_and_recommendations.R:56-67`, filled by
+`sapply()` over the two segment results:
+
+| Column | Code (`05_...R`) | Definition |
+|---|---|---|
+| `Baskets` | `length(x$trans)` — L58 | transactions in that segment's basket object |
+| `Products` | `ncol(x$trans)` — L59 | distinct items appearing in it (columns of the incidence matrix) |
+| `MinSupport` | `x$support` — L60 | the threshold that mining actually used |
+| `Rules` | `length(x$rules)` — L61 | rules left after `lift > 1` and redundancy removal |
+| `MeanLift` | `round(mean(quality(x$rules)$lift), 2)` — L62-63 | average lift over those rules |
+| `MaxLift` | `round(max(quality(x$rules)$lift), 2)` — L64-65 | the strongest single rule |
+
+Each segment is mined from scratch — the rules are *not* filtered out of the
+2,215 global rules. `make_trans()` (L12-16) rebuilds a transaction object from
+that segment's invoices only, dropping baskets left with fewer than 2 items,
+and `mine()` (L18-25) reruns Apriori on it:
+
+```r
+mine <- function(tr, support = PARAMS$support, confidence = PARAMS$confidence) {
+  r <- arules::apriori(tr, parameter = list(support = support,
+                       confidence = confidence, minlen = 2, maxlen = PARAMS$maxlen),
+                       control = list(verbose = FALSE))
+  r <- subset(r, lift > 1)                # L23
+  r[!arules::is.redundant(r)]             # L24
+}
+```
+
+**This is why 2,661 + 375 ≠ 2,215.** The segment counts come from two
+independent mining runs at two different support thresholds, on two smaller
+basket pools — they are not a partition of the global rule set. Baskets
+partition; rules do not. Note also that no Fisher/BH significance step is
+applied to the segment rules, unlike the global set.
 
 **Why International uses support 0.02 and the UK uses 0.01** — this is a
 deliberate methodological choice at `R/05_...R:45`:
@@ -853,6 +1383,33 @@ The split is by calendar month (`R/05_...R:74-75`): months 9, 10 and 11 are
 
 6,139 + 12,134 = 18,273 ✓
 
+**How the three columns are calculated.** The season label is assigned per row
+from the invoice month (`R/05_...R:72-73`), then the same
+`make_trans()` → `mine()` pair runs once per season and the results are written
+into a one-row data frame each (`R/05_...R:79-96`):
+
+```r
+retail$Season <- ifelse(lubridate::month(retail$Date) %in% c(9, 10, 11),
+                        "Pre-Christmas (Sep-Nov)", "Rest of year")     # L72-73
+
+for (s in c("Pre-Christmas (Sep-Nov)", "Rest of year")) {
+  d  <- dplyr::filter(retail, Season == s)     # L80
+  tr <- make_trans(d)                          # L81  rebuild baskets for this season
+  r  <- mine(tr)                               # L82  both seasons use support 0.01
+  season_rows[[s]] <- data.frame(
+    Season   = s,
+    Baskets  = length(tr),                     # L90
+    Rules    = length(r),                      # L90
+    MeanLift = round(mean(quality(r)$lift), 2))# L91
+}
+```
+
+**Both seasons are mined at support 0.01** — `mine(tr)` is called with no
+support argument, so it takes `PARAMS$support`. That is precisely why the
+comparison is not like-for-like: 1% of 6,139 baskets is 61 baskets, 1% of
+12,134 is 121. The threshold is the same *relative* number and a very different
+*absolute* bar.
+
 **What it says — and the counter-intuitive bit.** Three months hold 34% of the
 baskets but generate **more than twice as many rules** as the other nine months
 combined. Two forces produce this:
@@ -901,6 +1458,27 @@ Basket: `HANGING HEART JAR T-LIGHT HOLDER`, `FILIGRIS HEART WITH BUTTERFLY`,
 |---|---|---:|---:|---:|
 | 1 | ASSORTED COLOUR BIRD ORNAMENT | 8.80 | 0.700 | 0.0142 |
 | 2 | WHITE HANGING HEART T-LIGHT HOLDER | 2.54 | 0.313 | 0.0124 |
+
+**How the three numbers on each row are calculated.** They are not recomputed
+for your basket — they are the stored quality measures of the rule that fired,
+copied straight out of `quality(d$sig)` and rounded for display
+(`app.R:805-811`):
+
+```r
+rec <- data.frame(
+  Recommendation = RHS_ITEM[fires],                  # L806  consequent of the firing rule
+  Confidence     = round(QUAL$confidence[fires], 3), # L807  3 dp
+  Lift           = round(QUAL$lift[fires], 2),       # L808  2 dp
+  Support        = round(QUAL$support[fires], 4),    # L809  4 dp
+  stringsAsFactors = FALSE
+)
+```
+
+So "Confidence 0.700" means *historically*, across all 18,273 baskets, 70% of
+the baskets containing that rule's antecedent also contained the recommendation.
+It is a property of the mined rule, not a prediction scored against your five
+selected items. `Rank` (`app.R:822`) is simply the row position after sorting by
+lift.
 
 Read row 1 as: *of all baskets containing this antecedent, 70% also contained
 ASSORTED COLOUR BIRD ORNAMENT, which is 8.8× more often than baskets in general
@@ -1003,7 +1581,7 @@ The tab that converts statistics into pounds. Layout at `app.R:375-412`; all
 figures come from `output/tables/05_cross_sell_best_rule_per_product.csv`,
 built in `R/05_segments_and_recommendations.R:150-200`.
 
-## The four KPI boxes
+## The four KPI boxes (Cross-Sell)
 
 | Box | Value | Code | Computation |
 |---|---|---|---|
@@ -1011,6 +1589,31 @@ built in `R/05_segments_and_recommendations.R:150-200`.
 | Best Single Opportunity | GBP 24,625 | `app.R:885` | `max(PotentialRevenue)` |
 | Average Lift | 17.8x | `app.R:898` | `mean(cs_best$Lift)` |
 | Products with Opportunity | 238 | `app.R:908` | `nrow(cs_best)` |
+
+**How each box is calculated.** All four read the same 238-row CSV; the app adds
+only an aggregate and a format:
+
+```r
+total <- sum(d$cs_best$PotentialRevenue, na.rm = TRUE)                    # L878
+paste0("GBP ", format(round(total), big.mark = ","))                      # L880 -> "GBP 1,017,501"
+
+top <- head(arrange(d$cs_best, desc(PotentialRevenue)), 1)                # L891
+paste0("GBP ", format(round(top$PotentialRevenue), big.mark = ","))       # L893 -> "GBP 24,625"
+
+avg <- round(mean(d$cs_best$Lift, na.rm = TRUE), 1)                       # L904
+paste0(avg, "x")                                                          # L905 -> "17.8x"
+
+valueBox(nrow(d$cs_best), "Products with Opportunity", ...)               # L914 -> 238
+```
+
+Exact underlying values: total = 1,017,501.25; best single = 24,625.28; mean
+lift = 17.767 → 17.8; rows = 238. `na.rm = TRUE` matters — a consequent whose
+`AvgPrice` failed to join would produce `NA`, and the sum would otherwise
+collapse to `NA` rather than skipping it.
+
+**Why "238 products" and not 2,215 rules.** `cs_best` holds one row per
+*consequent product*, after the deduplication described below. 2,215 rules point
+at 238 distinct consequents.
 
 **Why Average Lift is 17.8x here but mean lift is 12.97 on the Rules tab.** Two
 different populations, both correct. The Rules tab averages all 2,215 rules;
@@ -1020,44 +1623,117 @@ rises. If you are asked about the discrepancy, that is the answer.
 
 ## The opportunity formula
 
-The chain runs, per rule (`R/05_...R:158-175`):
+This is the only place on the dashboard where a number is *modelled* rather than
+counted, so it is the most important derivation in the project.
+
+**Definition of each quantity, in words:**
+
+| Quantity | What it means |
+|---|---|
+| `MissedBaskets` | baskets that historically bought the antecedent **but not** the consequent |
+| `AvgPrice` | that consequent product's mean unit price across its line items |
+| `AvgQty` | that consequent product's mean units per line item |
+| `ExpectedUplift` | missed baskets that *would* convert if the rule's historical hit-rate held when prompted |
+| `PotentialRevenue` | the money those conversions would be worth over the 12 months of data |
+
+**The chain, per rule** (`R/05_...R:162-177`), with N = 18,273:
 
 ```
-MissedBaskets    = round( (coverage - support) x N )      N = 18,273
+MissedBaskets    = round( (coverage - support) x N )
 ExpectedUplift   = MissedBaskets x Confidence
-PotentialRevenue = ExpectedUplift x AvgPrice x AvgQty
+PotentialRevenue = round( ExpectedUplift x AvgPrice x AvgQty, 2 )
 ```
 
-`coverage` is P(LHS) and `support` is P(LHS ∩ RHS), so `coverage - support` is
-precisely the fraction of baskets that **took the antecedent but not the
-consequent** — the missed opportunities. The script notes this explicitly and
-avoids scanning every basket:
+**Step 1 — price the consequent** (`R/05_...R:151-154`):
+
+```r
+price <- retail |>
+  dplyr::group_by(Item) |>
+  dplyr::summarise(AvgPrice = mean(UnitPrice),   # L153  unweighted mean over line items
+                   AvgQty   = mean(Quantity),    # L154
+                   .groups  = "drop")
+```
+
+Both are **unweighted means over line items**, not revenue-weighted averages. So
+`AvgPrice × AvgQty` is "the average line of this product", worth about GBP 93
+for the cakestand. It is not the same as revenue ÷ units (12.68 for the same
+product on the Exploratory tab) — different definitions, both correct, and worth
+knowing which one you are quoting.
+
+**Step 2 — count the missed baskets without scanning any basket**
+(`R/05_...R:162-168`):
+
+```r
+N     <- length(trans)                             # L157  18,273
+q     <- quality(rules_all)                        # L158
+
+value_df <- data.frame(
+  Rule          = labels(rules_all),               # L163
+  Consequent    = unlist(as(rhs(rules_all), "list")),  # L164
+  Support       = round(q$support, 5),             # L165
+  Confidence    = round(q$confidence, 3),          # L166
+  Lift          = round(q$lift, 2),                # L167
+  MissedBaskets = round((q$coverage - q$support) * N)  # L168  <-- the trick
+)
+```
+
+`coverage` is supp(LHS) and `support` is supp(LHS ∪ RHS), so
+`coverage − support` is exactly the fraction of baskets that took the antecedent
+and skipped the consequent. The script says so itself at `R/05_...R:160-161`:
 
 > *"No basket scan needed: coverage is supp(LHS) and support is supp(LHS ∪ RHS),
 > so baskets holding the LHS but missing the RHS = (coverage − support) × N."*
 
-`AvgPrice` and `AvgQty` come from a per-item summary of the cleaned data
-(`mean(UnitPrice)` and `mean(Quantity)`), joined on the consequent.
+**Step 3 — join the price and monetise** (`R/05_...R:170-177`):
 
-**Worked example — the top row, GBP 24,625:**
+```r
+  dplyr::left_join(price, by = c("Consequent" = "Item")) |>   # L170
+  dplyr::mutate(
+    ExpectedUplift   = MissedBaskets * Confidence,                     # L173
+    PotentialRevenue = round(ExpectedUplift * AvgPrice * AvgQty, 2),   # L174
+    ExpectedUplift   = round(ExpectedUplift)                           # L175  rounded AFTER
+  ) |>
+  dplyr::arrange(dplyr::desc(PotentialRevenue))                        # L177
+```
+
+**Worked example — the top row, GBP 24,625.28:**
 
 Rule: `{ROSES REGENCY TEACUP AND SAUCER} => {REGENCY CAKESTAND 3 TIER}`
 
-| Quantity | Value | Where from |
-|---|---:|---|
-| support | 0.02873 | rule quality |
-| confidence | 0.494 | rule quality |
-| coverage | 0.05815 | = support ÷ confidence |
-| coverage − support | 0.02942 | |
-| × N = 18,273 | **537** | `MissedBaskets` |
-| × confidence 0.494 | **265** | `ExpectedUplift` |
-| AvgPrice | GBP 13.98 | mean unit price of the cakestand |
-| AvgQty | 6.64 | mean units per line |
-| 265.28 × 13.98 × 6.64 | **GBP 24,625.28** | `PotentialRevenue` |
+| Step | Quantity | Value | Where it comes from |
+|---|---|---:|---|
+| — | support | 0.02873 | `q$support`, `05_...R:165` |
+| — | confidence | 0.494 | `q$confidence`, `05_...R:166` |
+| — | coverage | 0.05816 | `q$coverage` (= support ÷ confidence) |
+| 2 | coverage − support | 0.02943 | fraction that missed the cakestand |
+| 2 | × N = 18,273 → round | **537** | `MissedBaskets` |
+| 3 | 537 × 0.494 | **265.278** | `ExpectedUplift`, unrounded |
+| 1 | AvgPrice | 13.9797 | `mean(UnitPrice)` for the cakestand |
+| 1 | AvgQty | 6.6402 | `mean(Quantity)` for the cakestand |
+| 3 | 265.278 × 13.9797 × 6.6402 | **24,625.28** | `PotentialRevenue` ✓ |
+| 3 | round(265.278) | 265 | `ExpectedUplift` as displayed |
 
 In plain terms: 537 baskets bought the teacup and saucer without the cakestand;
 if the rule's 49.4% success rate held when prompted, 265 of them would convert,
-and each conversion is worth about GBP 93.
+and each conversion is worth about GBP 93 (13.98 × 6.64).
+
+**Three rounding details that will bite you if you recompute by hand:**
+
+1. **The displayed uplift is not the one used.** `PotentialRevenue` is computed
+   on line 174 from the *unrounded* 265.278; only line 175 rounds the column to
+   265. Recomputing with 265 gives GBP 24,599.48 — GBP 26 short. The table is
+   right; the hand calculation is using a rounded input.
+2. **Confidence is rounded before it is used.** `Confidence` is rounded to 3 dp
+   on line 166 and that rounded value feeds line 173, so the uplift carries a
+   small deliberate approximation.
+3. **`MissedBaskets` uses full-precision quality, not the printed values.**
+   Recomputing from the displayed 0.02873 and 0.494 gives 537.7 → 538, one more
+   than the 537 in the table, because the real coverage has more digits than the
+   five shown.
+
+None of these are errors — they are what happens when a table rounds for display
+and the arithmetic runs at full precision. Say that plainly if the recomputation
+is put to you.
 
 ## The double-counting problem, and how it was handled
 
@@ -1382,6 +2058,118 @@ Every visible element, with the line that creates it.
 Figures `10` (two-key plot) and `12` (grouped matrix) are generated by
 `04_visualize_rules.R` but are **not displayed anywhere in the dashboard** — they
 exist in `output/figures/` only.
+
+---
+
+# Appendix C — "How did you get this number?" quick index
+
+Point at any number on the screen, find its row here, read the formula, quote
+the line. The **Derived in** column links to the section that shows the code.
+
+## Overview tab
+
+| Number on screen | Value | One-line formula | Code | Derived in |
+|---|---:|---|---|---|
+| Baskets | 18,273 | `n_distinct(InvoiceNo)` after cleaning | `app.R:474` | [KPI 1](#kpi-1--baskets--18273) |
+| Unique Products | 3,765 | `n_distinct(Item)`, `Item` = most frequent description per `StockCode` | `app.R:481` | [KPI 2](#kpi-2--unique-products--3765) |
+| Significant Rules | 2,215 | `length()` of the rule set after lift, redundancy and BH filters | `app.R:488` | [KPI 3](#kpi-3--significant-rules--2215) |
+| Total Revenue | GBP 9,658,813 | `Σ (Quantity × UnitPrice)` over 515,784 cleaned lines | `app.R:495` ← `01:80` | [KPI 4](#kpi-4--total-revenue--gbp-9658813) |
+| Monthly bar height | e.g. Nov = 1,411,515 | `sum(Revenue)` grouped by `floor_date(Date,"month")` | `02_eda.R:75` | [Monthly Revenue Trend](#monthly-revenue-trend) |
+| Monthly transactions | e.g. Nov = 2,567 | `n_distinct(InvoiceNo)` per month | `02_eda.R:76` | same |
+| Top-10 bar length | e.g. 2,246 | `count(Item)` on the deduplicated table | `02_eda.R:12` | [Top 10 Products](#top-10-products-by-frequency) |
+| Support column | e.g. 0.1229 | `Baskets / n_distinct(InvoiceNo)` | `02_eda.R:13` | same |
+| Heatmap tile | e.g. 300 | `distinct(InvoiceNo, Weekday, Hour)` then `count(Weekday, Hour)` | `app.R:529-530` | [Trading Rhythm](#trading-rhythm-weekday--hour) |
+| Country revenue | e.g. UK 8,169,434 | `sum(Revenue)` grouped by `Country` | `02_eda.R:108` | [Top Countries](#top-countries-by-revenue) |
+| Country share | e.g. 84.6% | `Revenue / sum(Revenue)` over all 38 countries | `02_eda.R:110` | same |
+
+## Exploratory tab
+
+| Number on screen | Value | One-line formula | Code | Derived in |
+|---|---:|---|---|---|
+| Frequency bar | e.g. 1,152 | `count(Item)`, top *n* rows | `02_eda.R:12` | [Top Products by Basket Frequency](#top-products-by-basket-frequency-interactive) |
+| Revenue bar | e.g. 165,394 | `sum(Revenue)` grouped by `Item` | `02_eda.R:33` | [Top Products by Revenue](#top-products-by-revenue-interactive) |
+| Units column | e.g. 13,048 | `sum(Quantity)` grouped by `Item` | `02_eda.R:33` | same |
+| Histogram bar | count of baskets | `count(InvoiceNo)` binned at width 2 | `app.R:584-588` | [Basket Size Distribution](#basket-size-distribution) |
+| Subtitle mean | 28.2 | `mean(BasketSize)` = 515,784 ÷ 18,273 | `app.R:585` | same |
+| Subtitle median | 17 | `median(BasketSize)` | `app.R:586` | same |
+| Stats table (Q1/Q3/P95) | 8 / 30 / 78.4 | `quantile(BasketSize, .25/.75/.95)` | `02_eda.R:63-69` | same |
+
+## Rules tab
+
+| Number on screen | Value | One-line formula | Code | Derived in |
+|---|---:|---|---|---|
+| Sensitivity grid cell | e.g. 2,229 | `length()` of a fresh Apriori run at that (support, confidence) | `03_apriori.R:150` | [Threshold sensitivity](#how-do-rule-counts-react-to-threshold-pairs--static-image) |
+| Total rules | 2,215 | `length(d$sig)` | `app.R:607` | [Rule Statistics](#rule-statistics) |
+| Support range | 0.0100 – 0.0451 | `min/max(quality(sig)$support)` | `app.R:609` | same |
+| Confidence range | 0.300 – 0.968 | `min/max(quality(sig)$confidence)` | `app.R:610` | same |
+| Lift range / mean | 2.47 – 75.47 / 12.97 | `min/max/mean(quality(sig)$lift)` | `app.R:611-612` | same |
+| `support` in a rule table | e.g. 0.04515 | count(X ∪ Y) / 18,273 | `arules`, `03_apriori.R:80` | same |
+| `confidence` | e.g. 0.67845 | supp(X ∪ Y) / supp(X) | `arules` | same |
+| `coverage` | e.g. 0.06655 | supp(X) | `arules` | same |
+| `lift` | e.g. 5.98 | confidence ÷ supp(Y) | `arules` | same |
+| `count` | e.g. 825 | support × 18,273 | `arules` | same |
+| `pAdjusted` (shows 0) | < 1e-5 | BH-adjusted Fisher exact p, rounded to 5 dp | `03_apriori.R:106`, `121` | [Rule Tables](#rule-tables-four-tabs) |
+
+## Explorer tab
+
+| Number on screen | Value | One-line formula | Code | Derived in |
+|---|---:|---|---|---|
+| Row count after Apply | ≤ Max results | logical mask on `quality(d$sig)`, then `head(sort(by="lift"), max)` | `app.R:644-678` | [What happens when you press Apply](#what-happens-when-you-press-apply) |
+| Displayed measures | as mined | `arules::DATAFRAME()` then `round(x, 4)` | `app.R:662-664` | same |
+
+## Segments tab
+
+| Number on screen | Value | One-line formula | Code | Derived in |
+|---|---:|---|---|---|
+| UK Baskets | 16,506 | `n_distinct(InvoiceNo[Country == "United Kingdom"])` | `app.R:685` | [Segments KPIs](#the-four-kpi-boxes-segments) |
+| International Baskets | 1,767 | `n_distinct(InvoiceNo[Country != "United Kingdom"])` | `app.R:691` | same |
+| UK / Intl "Top Rules" | 25 / 25 | `nrow()` of a CSV truncated to 25 — **not a rule count** | `app.R:697`, `702` | same |
+| `Baskets` column | 16,506 / 1,767 | `length(x$trans)` per segment | `05_...R:58` | [Segment Comparison](#segment-comparison-summary) |
+| `Products` column | 3,760 / 2,778 | `ncol(x$trans)` per segment | `05_...R:59` | same |
+| `Rules` column | 2,661 / 375 | `length()` of a fresh per-segment Apriori run | `05_...R:61` | same |
+| `MeanLift` / `MaxLift` | 13.13 / 72.66 | `mean` / `max` of that segment's lifts | `05_...R:62-65` | same |
+| Season `Baskets` | 6,139 / 12,134 | `length(tr)` after filtering on `month ∈ {9,10,11}` | `05_...R:90` | [Seasonal Analysis](#seasonal-analysis) |
+| Season `Rules` | 5,174 / 2,296 | `length(r)` from a per-season Apriori run at support 0.01 | `05_...R:90` | same |
+| Festive-only rules | 25 shown | `labels(fest)` not in `labels(rest)`, top 25 by lift | `05_...R:100` | same |
+
+## Recommender tab
+
+| Number on screen | Value | One-line formula | Code | Derived in |
+|---|---:|---|---|---|
+| Rank | 1, 2, 3 … | row position after `order(-Lift)` and dedup | `app.R:819-822` | [The recommendation algorithm](#the-recommendation-algorithm) |
+| Lift / Confidence / Support | e.g. 8.80 / 0.700 / 0.0142 | the firing rule's stored quality, rounded 2/3/4 dp | `app.R:807-809` | [With a basket loaded](#with-a-basket-loaded) |
+| "2,215 significant rules" text | 2,215 | **hard-coded string**, not computed | `app.R:346` | [gotcha 5](#part-9--things-worth-knowing-quirks-and-gotchas) |
+
+## Cross-Sell tab
+
+| Number on screen | Value | One-line formula | Code | Derived in |
+|---|---:|---|---|---|
+| Total Revenue Opportunity | GBP 1,017,501 | `sum(PotentialRevenue)` over the 238 best-per-product rules | `app.R:878` | [Cross-Sell KPIs](#the-four-kpi-boxes-cross-sell) |
+| Best Single Opportunity | GBP 24,625 | `max(PotentialRevenue)` | `app.R:891` | same |
+| Average Lift | 17.8x | `mean(cs_best$Lift)` — 238 rules, not 2,215 | `app.R:904` | same |
+| Products with Opportunity | 238 | `nrow(cs_best)` = distinct consequents | `app.R:914` | same |
+| `MissedBaskets` | e.g. 537 | `round((coverage − support) × 18,273)` | `05_...R:168` | [The opportunity formula](#the-opportunity-formula) |
+| `AvgPrice` | e.g. 13.98 | `mean(UnitPrice)` for the consequent product | `05_...R:153` | same |
+| `AvgQty` | e.g. 6.64 | `mean(Quantity)` for the consequent product | `05_...R:154` | same |
+| `ExpectedUplift` | e.g. 265 | `MissedBaskets × Confidence`, rounded after use | `05_...R:173`, `175` | same |
+| `PotentialRevenue` | e.g. 24,625.28 | `ExpectedUplift × AvgPrice × AvgQty` | `05_...R:174` | same |
+| Naive total (not shown) | GBP 7,553,161 | `sum(PotentialRevenue)` over all 2,215 rules — double-counted | `05_...R:198` | [The double-counting problem](#the-double-counting-problem-and-how-it-was-handled) |
+
+## Four sentences that answer most challenges
+
+1. **"Where does revenue come from?"** — `Revenue = Quantity × UnitPrice`,
+   created once at `R/01_load_clean.R:80` after eight cleaning filters; every
+   money figure on the dashboard is a `sum()` of that one column.
+2. **"Why 18,273 and not 25,900?"** — cancellations, non-positive quantities,
+   admin stock codes and junk descriptions are dropped, then any basket left
+   with a single item is removed because it carries no co-occurrence
+   information (`R/01_load_clean.R:99-102`).
+3. **"How is a rule scored?"** — support = both sides ÷ 18,273; confidence =
+   support ÷ coverage; lift = confidence ÷ the consequent's own support. All
+   three are computed by `arules::apriori()` at `R/03_apriori.R:80-88`.
+4. **"Is the GBP 1.02M real?"** — it is a modelled ceiling, not a forecast:
+   missed baskets × the rule's historical confidence × average line value, kept
+   to one best rule per product to avoid double counting (`R/05_...R:188-193`).
 
 ---
 

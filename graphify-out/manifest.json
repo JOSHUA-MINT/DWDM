@@ -1,8 +1,8 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1788367748.8042562,
-    "seen": 1788390103.4820402,
-    "ast_hash": "0fcc8665e572ab7be3dc76db735a1775",
+    "mtime": 1788393346.576656,
+    "seen": 1788393360.7776942,
+    "ast_hash": "f7f541187aaa1064be6389e05b0f16b4",
     "semantic_hash": ""
   },
   "R/00_setup.R": {
@@ -60,8 +60,8 @@
     "semantic_hash": ""
   },
   "output/tables/03_transactions_summary.txt": {
-    "mtime": 1788388475.5347984,
-    "seen": 1788390103.4820845,
+    "mtime": 1788392232.919674,
+    "seen": 1788393360.7777433,
     "ast_hash": "0f4022efd514b267d9dfc5ff1c995684",
     "semantic_hash": ""
   },
@@ -72,56 +72,56 @@
     "semantic_hash": ""
   },
   "output/figures/01_top_items_frequency.png": {
-    "mtime": 1788388472.2997534,
-    "seen": 1788390103.4820995,
+    "mtime": 1788392229.687554,
+    "seen": 1788393360.7777624,
     "ast_hash": "d6c8fc51da21bb31a30005de461472a1",
     "semantic_hash": ""
   },
   "output/figures/02_top_items_revenue.png": {
-    "mtime": 1788388472.576712,
-    "seen": 1788390103.482101,
+    "mtime": 1788392229.9675596,
+    "seen": 1788393360.7777646,
     "ast_hash": "e9360712b1b95f3390b8fd92275ad0ef",
     "semantic_hash": ""
   },
   "output/figures/03_basket_size_distribution.png": {
-    "mtime": 1788388473.0216455,
-    "seen": 1788390103.4821026,
+    "mtime": 1788392230.4045682,
+    "seen": 1788393360.7777662,
     "ast_hash": "9975ee0a805464391bad31c3d1da0472",
     "semantic_hash": ""
   },
   "output/figures/04_monthly_revenue.png": {
-    "mtime": 1788388473.4545834,
-    "seen": 1788390103.482104,
+    "mtime": 1788392230.8485773,
+    "seen": 1788393360.777768,
     "ast_hash": "11a1009c597964aa67b59ad64c50d161",
     "semantic_hash": ""
   },
   "output/figures/05_weekday_hour_heatmap.png": {
-    "mtime": 1788388473.6635532,
-    "seen": 1788390103.4821053,
+    "mtime": 1788392231.0555813,
+    "seen": 1788393360.7777696,
     "ast_hash": "00cd309e8a18d2e11158cc75bf941f4f",
     "semantic_hash": ""
   },
   "output/figures/06_top_countries.png": {
-    "mtime": 1788388473.8625247,
-    "seen": 1788390103.482107,
+    "mtime": 1788392231.2565854,
+    "seen": 1788393360.7777715,
     "ast_hash": "ef64e5df73730ba0f13adabcd9df98a6",
     "semantic_hash": ""
   },
   "output/figures/07_item_frequency_relative.png": {
-    "mtime": 1788388475.5822885,
-    "seen": 1788390103.4821084,
+    "mtime": 1788392232.9676197,
+    "seen": 1788393360.7777734,
     "ast_hash": "e1a8206925f9983839163f34f8b62980",
     "semantic_hash": ""
   },
   "output/figures/08_threshold_sensitivity.png": {
-    "mtime": 1788388482.2579806,
-    "seen": 1788390103.4821098,
+    "mtime": 1788392239.841757,
+    "seen": 1788393360.7777748,
     "ast_hash": "5d896b3bb8baa69a7d1e470da0037418",
     "semantic_hash": ""
   },
   "output/figures/09_rules_scatter.png": {
-    "mtime": 1788388482.620992,
-    "seen": 1788390103.4821112,
+    "mtime": 1788392240.2087646,
+    "seen": 1788393360.7777765,
     "ast_hash": "b57bbcff8425d93235965cb744914e6a",
     "semantic_hash": ""
   },
@@ -150,14 +150,14 @@
     "semantic_hash": ""
   },
   "output/figures/14_top_rules_by_lift_bars.png": {
-    "mtime": 1788388482.8659997,
-    "seen": 1788390103.4821198,
+    "mtime": 1788392240.4557695,
+    "seen": 1788393360.7777863,
     "ast_hash": "4cfc895d7572e954c4819fe2045480d6",
     "semantic_hash": ""
   },
   "output/figures/15_cross_sell_opportunity_value.png": {
-    "mtime": 1788388491.2811737,
-    "seen": 1788390103.4821212,
+    "mtime": 1788392249.1169426,
+    "seen": 1788393360.7777882,
     "ast_hash": "16424eb1923944d39abd5a6ea57b6c09",
     "semantic_hash": ""
   },
@@ -180,9 +180,9 @@
     "semantic_hash": ""
   },
   "DASHBOARD_VISUAL_GUIDE.md": {
-    "mtime": 1788390102.2406838,
-    "seen": 1788390103.4820738,
-    "ast_hash": "41f4710ab6fb6061c2aea80a92d27584",
+    "mtime": 1788393331.2020955,
+    "seen": 1788393360.7777297,
+    "ast_hash": "1267c31a554122f5b6b34a65847b71d0",
     "semantic_hash": ""
   },
   "NUMBERS_TRACED.md": {

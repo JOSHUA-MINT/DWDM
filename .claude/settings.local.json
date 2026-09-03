@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(graphify query *)"
+      "Bash(graphify query *)",
+      "Bash(python3 -c ' *)",
+      "Bash(grep -n '^#\\\\{2,3\\\\} ' DASHBOARD_VISUAL_GUIDE.md)",
+      "Bash(awk -F': ' '{print $2}')",
+      "Bash(python3 -)",
+      "Bash(grep -n \"^| .*\\\\`[^\\\\`]*|[^\\\\`]*\\\\`\" DASHBOARD_VISUAL_GUIDE.md)"
     ]
   }
 }
